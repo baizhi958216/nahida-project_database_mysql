@@ -11,7 +11,7 @@
  Target Server Version : 80031 (8.0.31)
  File Encoding         : 65001
 
- Date: 09/12/2022 19:33:58
+ Date: 10/12/2022 00:08:55
 */
 
 SET NAMES utf8mb4;
@@ -22,12 +22,12 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin`  (
-  `adminid` int UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '管理员ID',
-  `adminname` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '管理员昵称',
-  `adminacc` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '管理员账号',
-  `adminpsw` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '管理员密码',
-  PRIMARY KEY (`adminid`) USING BTREE,
-  UNIQUE INDEX `adminacc`(`adminacc` ASC) USING BTREE
+  `AdminID` int UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '管理员ID',
+  `AdminName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '管理员昵称',
+  `AdminAccount` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '管理员账号',
+  `AdminPassword` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '管理员密码',
+  PRIMARY KEY (`AdminID`) USING BTREE,
+  INDEX `AdminAccount`(`AdminAccount` ASC) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
@@ -51,26 +51,26 @@ INSERT INTO `admin` VALUES (13, 'dsada', '123abcf', 'dasdasdadad');
 -- ----------------------------
 DROP TABLE IF EXISTS `anime`;
 CREATE TABLE `anime`  (
-  `aid` int UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '动漫ID',
-  `aname` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '动漫名',
-  `acompany` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '动漫制作公司',
-  `areldate` date NULL DEFAULT NULL COMMENT '动漫首播日期',
-  `aepisode` int UNSIGNED NULL DEFAULT 0 COMMENT '动漫已更新剧集',
-  `astats` enum('连载中','已完结') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '连载中' COMMENT '动漫状态',
-  `alang` enum('国语','粤语','日语','英语') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '日语' COMMENT '动漫语言',
-  `ahot` int NULL DEFAULT NULL COMMENT '动漫热度',
-  `arecommend` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT '0' COMMENT '动漫是否上推荐',
-  `adesc` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '动漫剧情',
-  PRIMARY KEY (`aid`) USING BTREE,
-  INDEX `aname`(`aname` ASC) USING BTREE
+  `AnimeID` int UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '动漫ID',
+  `AnimeName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '动漫名',
+  `AnimeCompany` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '动漫制作公司',
+  `AnimeReleaseDate` date NULL DEFAULT NULL COMMENT '动漫首播日期',
+  `AnimeEpisode` int UNSIGNED NULL DEFAULT 0 COMMENT '动漫已更新剧集',
+  `AnimeStats` enum('连载中','已完结') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '连载中' COMMENT '动漫状态',
+  `AnimeLanguage` enum('国语','粤语','日语','英语') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '日语' COMMENT '动漫语言',
+  `AnimeHot` int NULL DEFAULT NULL COMMENT '动漫热度',
+  `AnimeRecommend` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT '0' COMMENT '动漫是否上推荐',
+  `AnimeDescription` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '动漫剧情',
+  PRIMARY KEY (`AnimeID`) USING BTREE,
+  INDEX `AnimeName`(`AnimeName` ASC) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of anime
 -- ----------------------------
-INSERT INTO `anime` VALUES (1, '魔女之旅', 'C2C', '2020-10-02', 12, '已完结', '日语', 6, 'true', '某个地方有一位旅人，她的名字是伊蕾娜。是一位年纪轻轻就成了魔法使中最上位「魔女」的天才。因为向往着幼时读过的旅行故事，随意地进行着漫长的旅行。在这个广阔的世界里自由地漫步，接触着形形色色有趣的人，体味着人们美好的日常生活，她作为一名旅人，不带有任何目的地接触着各种国家的各色人群。还有同样数量的——「不必理会我。我只是一介旅人罢了。接下来还得继续前往下一个地方呢。」由魔女伊蕾娜所连接的，关于相遇和离别的故事……。');
-INSERT INTO `anime` VALUES (2, '莉可丽丝', 'A-1 Pictures', '2022-07-02', 13, '已完结', '日语', 20, 'true', '安宁的日常——背后却暗藏秘密将犯罪防患于未然的秘密组织——“DA（Direct Attack）”隶属于DA的少女特工——“莉可丽丝”理所当然的日常，都要归功于她们。咖啡厅“莉可莉可” 作为DA支部，员工有号称史上最强莉可丽丝的精英·锦木千束、优秀却暗藏隐情的莉可丽丝·井上泷奈。这里供应的不光是咖啡和甜品，还有照顾孩子、代为购物、教外国人日语等服务，全都不像是“莉可丽丝”会做的事。自由随性又乐天的和平主义者·千束和效率至上的泷奈，反差巨大的两人组成搭档，开始了忙忙碌碌的每一天。');
-INSERT INTO `anime` VALUES (3, '关于我转生变成史莱姆这档事 第二季', '8bit', '2021-01-05', 26, '已完结', '日语', 12, 'true', '主人公利姆鲁与仰慕他而聚集的众多魔物们所建立的国家「鸠拉·特恩佩斯特国」，经由与邻国的协议及交易，让「人类与魔物共同漫步的国家」这一温柔的理想逐步成形。利姆鲁作为曾是人类的史莱姆当然拥有「对人类的好意」……但这个世界中却存在着明确的「对魔物的敌意」。当这不合理的现实摆在眼前时，利姆鲁将做出选择。为了「什么都不想失去」——万众期待的转生喜剧突入暴风的新章！');
+INSERT INTO `anime` VALUES (1, '魔女之旅', 'C2C', '2020-10-02', 12, '已完结', '日语', 6, 'false', '某个地方有一位旅人，她的名字是伊蕾娜。是一位年纪轻轻就成了魔法使中最上位「魔女」的天才。因为向往着幼时读过的旅行故事，随意地进行着漫长的旅行。在这个广阔的世界里自由地漫步，接触着形形色色有趣的人，体味着人们美好的日常生活，她作为一名旅人，不带有任何目的地接触着各种国家的各色人群。还有同样数量的——「不必理会我。我只是一介旅人罢了。接下来还得继续前往下一个地方呢。」由魔女伊蕾娜所连接的，关于相遇和离别的故事……。');
+INSERT INTO `anime` VALUES (2, '莉可丽丝', 'A-1 Pictures', '2022-07-02', 13, '已完结', '日语', 20, 'false', '安宁的日常——背后却暗藏秘密将犯罪防患于未然的秘密组织——“DA（Direct Attack）”隶属于DA的少女特工——“莉可丽丝”理所当然的日常，都要归功于她们。咖啡厅“莉可莉可” 作为DA支部，员工有号称史上最强莉可丽丝的精英·锦木千束、优秀却暗藏隐情的莉可丽丝·井上泷奈。这里供应的不光是咖啡和甜品，还有照顾孩子、代为购物、教外国人日语等服务，全都不像是“莉可丽丝”会做的事。自由随性又乐天的和平主义者·千束和效率至上的泷奈，反差巨大的两人组成搭档，开始了忙忙碌碌的每一天。');
+INSERT INTO `anime` VALUES (3, '关于我转生变成史莱姆这档事 第二季', '8bit', '2021-01-05', 26, '已完结', '日语', 12, 'false', '主人公利姆鲁与仰慕他而聚集的众多魔物们所建立的国家「鸠拉·特恩佩斯特国」，经由与邻国的协议及交易，让「人类与魔物共同漫步的国家」这一温柔的理想逐步成形。利姆鲁作为曾是人类的史莱姆当然拥有「对人类的好意」……但这个世界中却存在着明确的「对魔物的敌意」。当这不合理的现实摆在眼前时，利姆鲁将做出选择。为了「什么都不想失去」——万众期待的转生喜剧突入暴风的新章！');
 INSERT INTO `anime` VALUES (4, '被开除出勇者队伍的驯兽使，邂逅了最强种猫耳少女', 'EMT SQUARED', '2022-10-02', 9, '连载中', '日语', 23, 'true', '“雷因，你被解雇了”突然有一天，雷因被驱逐出勇者的队伍。他选择当一个冒险家作为以后生命之路，在考试期间帮助一个摔倒的女孩。女孩名为奏，是最最强大的“猫灵族”！受到奏的邀请，雷因作为驭兽使，两人决定签订契约并组成一个队伍。在另一方面，失去雷因的勇者队伍开始意识到他的重要性。“喵……和雷因在一起的时候，总是感到惊讶”\n“不会无聊吧？”“……哇！是啊”使役一切的驭兽使和最强的伙伴凌驾于勇者队伍——。和重要的伙伴相遇并成长的冒险幻想！');
 INSERT INTO `anime` VALUES (5, '夫妇以上，恋人未满。', 'studio MOTHER', '2022-10-09', 8, '连载中', '日语', 32, 'true', '不起眼的男高中生药院次郎，在“夫妻实习”的课堂上，和绝对不可能有关系的班上的美少女渡边星一起生活。他们对彼此的印象也很差。“阴”和“阳”不匹配非常刺激。洗完澡后的突发事件，突然的接触麻烦！？次郎虽然闷闷不乐，但还是下意识地想……“喂，真的好好地玩夫妻游戏吧”互相有想法的次郎和星为了得到交换组合的权利，认真地扮演夫妻。然而，酸甜苦辣的夫妻生活逐渐让彼此意识到各自的魅力。比“恋人”更刺激的，辣妹和无异性缘男生的“夫妻游戏”开始了  。');
 INSERT INTO `anime` VALUES (6, '契约之吻', 'A-1 Pictures', '2022-07-02', 13, '已完结', '日语', 20, 'false', '“贝隆市”——不属于任何国家，漂浮在太平洋上的巨型浮岛型城市。因其开采新能源资源“欧尔贡矿”而在这个世界上占有一席之地，贝隆市也经常发生被称为“D灾害”的由“恶魔”引起的特殊事件。\r\n只有一小部分人知道D灾害的存在，对其进行处理的是“PMC”（民间军事公司），生活在贝隆市的青年修则经营着一家，但公司的规模很小，而且修还要找工作，所以资金周转总是很困难。\r\n公私不分地、献身地支撑着修的生活的，是在贝隆市的学校上学的美少女高中生木更。还有一个，是修曾经所属的大型PMC的职员，也是他的前女友绫乃，她现在依然很关心修，对木更没有好感。\r\n木更对修有着强烈的执着，其根本在于两人的“契约”。\r\n她的真面目是恶魔。\r\n木更支撑着修的生活，也根据契约协助消灭恶魔。\r\n其代价是甜蜜而危险的“吻”。爱与契约，两人危险的羁绊。命运将会走向何方……');
@@ -84,10 +84,10 @@ INSERT INTO `anime` VALUES (10, '摇曳百合', '动画工房', '2011-07-04', 12
 -- ----------------------------
 DROP TABLE IF EXISTS `animecv`;
 CREATE TABLE `animecv`  (
-  `cvid` int UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'CVID',
-  `cvname` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'CV名字',
-  PRIMARY KEY (`cvid`) USING BTREE,
-  UNIQUE INDEX `cvname`(`cvname` ASC) USING BTREE
+  `CVID` int UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'CVID',
+  `CVName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'CV名字',
+  PRIMARY KEY (`CVID`) USING BTREE,
+  UNIQUE INDEX `CVName`(`CVName` ASC) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 52 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
@@ -150,9 +150,9 @@ INSERT INTO `animecv` VALUES (17, '齐藤壮马');
 -- ----------------------------
 DROP TABLE IF EXISTS `animetype`;
 CREATE TABLE `animetype`  (
-  `tid` int UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '动漫类型ID',
-  `type` enum('小说改','魔法','奇幻','架空','原创','战斗','日常','喜剧','动画','校园','百合','恋爱') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '动漫类型名字',
-  PRIMARY KEY (`tid`) USING BTREE
+  `TypeID` int UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '动漫类型ID',
+  `Type` enum('小说改','魔法','奇幻','架空','原创','战斗','日常','喜剧','动画','校园','百合','恋爱') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '动漫类型名字',
+  PRIMARY KEY (`TypeID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
@@ -176,12 +176,12 @@ INSERT INTO `animetype` VALUES (12, '百合');
 -- ----------------------------
 DROP TABLE IF EXISTS `animeupdater`;
 CREATE TABLE `animeupdater`  (
-  `aid` int UNSIGNED NOT NULL,
-  `adminid` int UNSIGNED NOT NULL COMMENT '动漫上传者ID',
-  `udate` datetime NOT NULL COMMENT '动漫ID',
-  INDEX `adminid`(`adminid` ASC) USING BTREE,
-  INDEX `aid`(`aid` ASC) USING BTREE,
-  CONSTRAINT `animeupdater_ibfk_2` FOREIGN KEY (`adminid`) REFERENCES `admin` (`adminid`) ON DELETE RESTRICT ON UPDATE RESTRICT
+  `AnimeID` int UNSIGNED NOT NULL,
+  `AdminID` int UNSIGNED NOT NULL COMMENT '动漫上传者ID',
+  `UpdateDate` datetime NOT NULL COMMENT '动漫ID',
+  INDEX `AdminID`(`AdminID` ASC) USING BTREE,
+  INDEX `AnimeID`(`AnimeID` ASC) USING BTREE,
+  CONSTRAINT `animeupdater_ibfk_2` FOREIGN KEY (`AdminID`) REFERENCES `admin` (`AdminID`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
@@ -203,16 +203,15 @@ INSERT INTO `animeupdater` VALUES (10, 1, '2022-12-04 23:14:15');
 -- ----------------------------
 DROP TABLE IF EXISTS `comment`;
 CREATE TABLE `comment`  (
-  `cmid` int UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '回复ID',
-  `cmdate` datetime NULL DEFAULT NULL COMMENT '回复日期',
-  `cmtext` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '回复内容',
-  `uid` int UNSIGNED NOT NULL COMMENT '用户ID',
-  `aid` int UNSIGNED NOT NULL COMMENT '动漫ID',
-  PRIMARY KEY (`cmid`) USING BTREE,
-  INDEX `uid`(`uid` ASC) USING BTREE,
-  INDEX `aid`(`aid` ASC) USING BTREE,
-  CONSTRAINT `comment_ibfk_1` FOREIGN KEY (`uid`) REFERENCES `user` (`UserID`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-  CONSTRAINT `comment_ibfk_2` FOREIGN KEY (`aid`) REFERENCES `anime` (`aid`) ON DELETE RESTRICT ON UPDATE RESTRICT
+  `CommentID` int UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '回复ID',
+  `CommentDate` datetime NULL DEFAULT NULL COMMENT '回复日期',
+  `CommentText` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '回复内容',
+  `UserID` int UNSIGNED NOT NULL COMMENT '用户ID',
+  `AmimeID` int UNSIGNED NOT NULL COMMENT '动漫ID',
+  PRIMARY KEY (`CommentID`) USING BTREE,
+  INDEX `UserID`(`UserID` ASC, `AmimeID` ASC) USING BTREE,
+  INDEX `AmimeID`(`AmimeID` ASC) USING BTREE,
+  CONSTRAINT `comment_ibfk_2` FOREIGN KEY (`AmimeID`) REFERENCES `anime` (`AnimeID`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
@@ -235,13 +234,12 @@ INSERT INTO `comment` VALUES (11, '2022-12-04 23:25:35', 'da是真的垃 系统�
 DROP TABLE IF EXISTS `cv2anime`;
 CREATE TABLE `cv2anime`  (
   `id` int UNSIGNED NOT NULL AUTO_INCREMENT,
-  `aid` int UNSIGNED NOT NULL COMMENT '动漫ID',
-  `cvid` int UNSIGNED NOT NULL COMMENT 'CVID',
+  `AnimeID` int UNSIGNED NOT NULL COMMENT '动漫ID',
+  `CVID` int UNSIGNED NOT NULL COMMENT 'CVID',
   PRIMARY KEY (`id`) USING BTREE,
-  INDEX `aid`(`aid` ASC) USING BTREE,
-  INDEX `cvid`(`cvid` ASC) USING BTREE,
-  CONSTRAINT `cv2anime_ibfk_2` FOREIGN KEY (`cvid`) REFERENCES `animecv` (`cvid`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 92 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+  INDEX `CVID`(`CVID` ASC) USING BTREE,
+  CONSTRAINT `cv2anime_ibfk_1` FOREIGN KEY (`CVID`) REFERENCES `animecv` (`CVID`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 100 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of cv2anime
@@ -292,10 +290,6 @@ INSERT INTO `cv2anime` VALUES (52, 10, 9);
 INSERT INTO `cv2anime` VALUES (53, 10, 10);
 INSERT INTO `cv2anime` VALUES (54, 10, 11);
 INSERT INTO `cv2anime` VALUES (55, 10, 27);
-INSERT INTO `cv2anime` VALUES (73, 1, 3);
-INSERT INTO `cv2anime` VALUES (74, 1, 2);
-INSERT INTO `cv2anime` VALUES (75, 1, 4);
-INSERT INTO `cv2anime` VALUES (76, 1, 1);
 INSERT INTO `cv2anime` VALUES (82, 3, 8);
 INSERT INTO `cv2anime` VALUES (83, 3, 28);
 INSERT INTO `cv2anime` VALUES (84, 3, 29);
@@ -305,18 +299,22 @@ INSERT INTO `cv2anime` VALUES (88, 11, 9);
 INSERT INTO `cv2anime` VALUES (89, 11, 10);
 INSERT INTO `cv2anime` VALUES (90, 11, 27);
 INSERT INTO `cv2anime` VALUES (91, 11, 11);
+INSERT INTO `cv2anime` VALUES (96, 1, 2);
+INSERT INTO `cv2anime` VALUES (97, 1, 3);
+INSERT INTO `cv2anime` VALUES (98, 1, 1);
+INSERT INTO `cv2anime` VALUES (99, 1, 4);
 
 -- ----------------------------
 -- Table structure for image
 -- ----------------------------
 DROP TABLE IF EXISTS `image`;
 CREATE TABLE `image`  (
-  `id` int UNSIGNED NOT NULL AUTO_INCREMENT,
-  `adminid` int UNSIGNED NOT NULL COMMENT '管理员id',
-  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '图片id',
-  PRIMARY KEY (`id`) USING BTREE,
-  INDEX `adminid`(`adminid` ASC) USING BTREE,
-  CONSTRAINT `image_ibfk_1` FOREIGN KEY (`adminid`) REFERENCES `admin` (`adminid`) ON DELETE RESTRICT ON UPDATE RESTRICT
+  `ImageID` int UNSIGNED NOT NULL AUTO_INCREMENT,
+  `AdminID` int UNSIGNED NOT NULL COMMENT '管理员id',
+  `ImageName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '图片id',
+  PRIMARY KEY (`ImageID`) USING BTREE,
+  INDEX `AdminID`(`AdminID` ASC) USING BTREE,
+  CONSTRAINT `image_ibfk_1` FOREIGN KEY (`AdminID`) REFERENCES `admin` (`AdminID`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
@@ -339,13 +337,13 @@ INSERT INTO `image` VALUES (10, 1, '000010');
 DROP TABLE IF EXISTS `type2anime`;
 CREATE TABLE `type2anime`  (
   `id` int UNSIGNED NOT NULL AUTO_INCREMENT,
-  `tid` int UNSIGNED NOT NULL COMMENT '类型ID',
-  `aid` int UNSIGNED NOT NULL COMMENT '动漫ID',
+  `TypeID` int UNSIGNED NOT NULL COMMENT '类型ID',
+  `AnimeID` int UNSIGNED NOT NULL COMMENT '动漫ID',
   PRIMARY KEY (`id`) USING BTREE,
-  INDEX `tid`(`tid` ASC) USING BTREE,
-  INDEX `aid`(`aid` ASC) USING BTREE,
-  CONSTRAINT `type2anime_ibfk_1` FOREIGN KEY (`tid`) REFERENCES `animetype` (`tid`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 66 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+  INDEX `TypeID`(`TypeID` ASC) USING BTREE,
+  INDEX `AnimeID`(`AnimeID` ASC) USING BTREE,
+  CONSTRAINT `type2anime_ibfk_1` FOREIGN KEY (`TypeID`) REFERENCES `animetype` (`TypeID`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 72 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of type2anime
@@ -367,15 +365,15 @@ INSERT INTO `type2anime` VALUES (23, 12, 10);
 INSERT INTO `type2anime` VALUES (30, 6, 2);
 INSERT INTO `type2anime` VALUES (31, 7, 2);
 INSERT INTO `type2anime` VALUES (32, 5, 2);
-INSERT INTO `type2anime` VALUES (53, 6, 1);
-INSERT INTO `type2anime` VALUES (54, 2, 1);
-INSERT INTO `type2anime` VALUES (55, 1, 1);
 INSERT INTO `type2anime` VALUES (59, 6, 3);
 INSERT INTO `type2anime` VALUES (60, 3, 3);
 INSERT INTO `type2anime` VALUES (61, 1, 3);
 INSERT INTO `type2anime` VALUES (63, 8, 11);
 INSERT INTO `type2anime` VALUES (64, 11, 11);
 INSERT INTO `type2anime` VALUES (65, 12, 11);
+INSERT INTO `type2anime` VALUES (69, 6, 1);
+INSERT INTO `type2anime` VALUES (70, 2, 1);
+INSERT INTO `type2anime` VALUES (71, 1, 1);
 
 -- ----------------------------
 -- Table structure for user
@@ -407,21 +405,21 @@ INSERT INTO `user` VALUES (4, '莱依拉', '\r\nlayla ', 'layla@mihoyo', '123456
 -- ----------------------------
 DROP TABLE IF EXISTS `yiyan`;
 CREATE TABLE `yiyan`  (
-  `yid` int UNSIGNED NOT NULL AUTO_INCREMENT,
-  `adminid` int UNSIGNED NOT NULL COMMENT '用户ID',
-  `sentence` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '一言语句',
-  `origin` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '一言来源',
-  PRIMARY KEY (`yid`) USING BTREE,
-  INDEX `adminid`(`adminid` ASC) USING BTREE,
-  CONSTRAINT `yiyan_ibfk_1` FOREIGN KEY (`adminid`) REFERENCES `admin` (`adminid`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+  `YiYanID` int UNSIGNED NOT NULL AUTO_INCREMENT,
+  `AdminID` int UNSIGNED NOT NULL COMMENT '用户ID',
+  `Sentence` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '一言语句',
+  `Origin` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '一言来源',
+  PRIMARY KEY (`YiYanID`) USING BTREE,
+  INDEX `AdminID`(`AdminID` ASC) USING BTREE,
+  CONSTRAINT `yiyan_ibfk_1` FOREIGN KEY (`AdminID`) REFERENCES `admin` (`AdminID`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of yiyan
 -- ----------------------------
 INSERT INTO `yiyan` VALUES (1, 1, '万有引力可无法对坠入爱河的人负责。', '爱因斯坦');
 INSERT INTO `yiyan` VALUES (2, 2, '当遇到你时，大脑连上CSGO都会掉帧。', 'Florence');
-INSERT INTO `yiyan` VALUES (3, 1, '幸运的人一生都在被童年治愈，不幸的人一生都在治愈童年。', '	阿尔弗雷德·阿德勒');
+INSERT INTO `yiyan` VALUES (3, 1, '幸运的人一生都在被童年治愈，不幸的人一生都在治愈童年。', '阿尔弗雷德·阿德勒');
 INSERT INTO `yiyan` VALUES (4, 1, '对于永生之人，最大的敌人，是无聊。', '东方永夜抄');
 INSERT INTO `yiyan` VALUES (5, 2, '不管你说再多的慌，只有自己的内心，是无法欺骗的啊。', '七大罪');
 INSERT INTO `yiyan` VALUES (6, 1, '山谷的最低点正是山的起点。', '林清玄');
@@ -429,40 +427,39 @@ INSERT INTO `yiyan` VALUES (7, 1, '生命如同寓言，其价值不在于长短
 INSERT INTO `yiyan` VALUES (8, 1, '我和空太是恋人以上，友人未满的关系。', '樱花庄的宠物女孩');
 INSERT INTO `yiyan` VALUES (9, 1, '如果我们能活着出去的话，千山万水，你愿意陪我一起看吗？', '狐妖小红娘');
 INSERT INTO `yiyan` VALUES (10, 1, '一味地追求理想，总有一天会被现实背叛。', '名侦探柯南：绯色的子弹');
-INSERT INTO `yiyan` VALUES (11, 1, 'SpringBoot不好用', '我');
 
 -- ----------------------------
 -- View structure for cvgroupanime
 -- ----------------------------
 DROP VIEW IF EXISTS `cvgroupanime`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `cvgroupanime` AS select `anime`.`aid` AS `aid`,`anime`.`aname` AS `aname`,group_concat(`animecv`.`cvname` separator ',') AS `cvname` from ((`anime` join `cv2anime`) join `animecv`) where ((`anime`.`aid` = `cv2anime`.`aid`) and (`animecv`.`cvid` = `cv2anime`.`cvid`)) group by `anime`.`aid`,`anime`.`aname`;
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `cvgroupanime` AS select `anime`.`AnimeID` AS `AnimeID`,`anime`.`AnimeName` AS `AnimeName`,group_concat(`animecv`.`CVName` separator ',') AS `CVName` from ((`anime` join `cv2anime`) join `animecv`) where ((`anime`.`AnimeID` = `cv2anime`.`AnimeID`) and (`animecv`.`CVID` = `cv2anime`.`CVID`)) group by `anime`.`AnimeID`,`anime`.`AnimeName`;
 
 -- ----------------------------
 -- View structure for typegroupanime
 -- ----------------------------
 DROP VIEW IF EXISTS `typegroupanime`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `typegroupanime` AS select `anime`.`aid` AS `aid`,`anime`.`aname` AS `aname`,group_concat(`animetype`.`type` separator ',') AS `type` from ((`anime` join `type2anime` on((`anime`.`aid` = `type2anime`.`aid`))) join `animetype` on((`type2anime`.`tid` = `animetype`.`tid`))) where ((`anime`.`aid` = `type2anime`.`aid`) and (`type2anime`.`tid` = `animetype`.`tid`)) group by `anime`.`aid`,`anime`.`aname`;
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `typegroupanime` AS select `anime`.`AnimeID` AS `AnimeID`,`anime`.`AnimeName` AS `AnimeName`,group_concat(`animetype`.`Type` separator ',') AS `AnimeType` from ((`anime` join `type2anime` on((`anime`.`AnimeID` = `type2anime`.`AnimeID`))) join `animetype` on((`type2anime`.`TypeID` = `animetype`.`TypeID`))) where ((`anime`.`AnimeID` = `type2anime`.`AnimeID`) and (`type2anime`.`TypeID` = `animetype`.`TypeID`)) group by `anime`.`AnimeID`,`anime`.`AnimeName`;
 
 -- ----------------------------
 -- View structure for uploaderviaid
 -- ----------------------------
 DROP VIEW IF EXISTS `uploaderviaid`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `uploaderviaid` AS select `admin`.`adminname` AS `adminname`,`animeupdater`.`aid` AS `animeid`,`animeupdater`.`udate` AS `updatedate` from (`admin` left join `animeupdater` on((`admin`.`adminid` = `animeupdater`.`adminid`))) where (`animeupdater`.`aid` is not null);
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `uploaderviaid` AS select `admin`.`AdminName` AS `AdminName`,`animeupdater`.`AnimeID` AS `AnimeID`,`animeupdater`.`UpdateDate` AS `UpdateDate` from (`admin` left join `animeupdater` on((`admin`.`AdminID` = `animeupdater`.`AdminID`))) where (`animeupdater`.`AnimeID` is not null);
 
 -- ----------------------------
 -- View structure for uploadervianame
 -- ----------------------------
 DROP VIEW IF EXISTS `uploadervianame`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `uploadervianame` AS select `uploaderviaid`.`adminname` AS `adminname`,`anime`.`aname` AS `aname`,`uploaderviaid`.`updatedate` AS `updatedate` from (`uploaderviaid` left join `anime` on((`uploaderviaid`.`animeid` = `anime`.`aid`)));
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `uploadervianame` AS select `uploaderviaid`.`AdminName` AS `AdminName`,`anime`.`AnimeName` AS `AnimeName`,`uploaderviaid`.`UpdateDate` AS `UpdateDate` from (`uploaderviaid` left join `anime` on((`uploaderviaid`.`AnimeID` = `anime`.`AnimeID`)));
 
 -- ----------------------------
 -- Procedure structure for admin_login
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `admin_login`;
 delimiter ;;
-CREATE PROCEDURE `admin_login`(IN adminaccount VARCHAR(255))
+CREATE PROCEDURE `admin_login`(IN account VARCHAR(255))
 BEGIN
-	SELECT adminpsw FROM admin WHERE adminacc = adminaccount;
+	SELECT AdminPassword FROM admin WHERE AdminAccount = account;
 END
 ;;
 delimiter ;
@@ -474,10 +471,22 @@ DROP PROCEDURE IF EXISTS `findallanimes`;
 delimiter ;;
 CREATE PROCEDURE `findallanimes`()
 BEGIN
-	SELECT anime.aid,anime.aname,anime.ahot,anime.adesc,anime.alang,anime.astats,anime.acompany,anime.aepisode,anime.areldate,anime.arecommend,typegroupanime.type,cvgroupanime.cvname 
+	SELECT 
+	anime.AnimeID,
+	anime.AnimeName,
+	anime.AnimeHot,
+	anime.AnimeDescription,
+	anime.AnimeLanguage,
+	anime.AnimeStats,
+	anime.AnimeCompany,
+	anime.AnimeEpisode,
+	anime.AnimeReleaseDate,
+	anime.AnimeRecommend,
+	typegroupanime.AnimeType,
+	cvgroupanime.CVName 
 	FROM anime 
-	INNER JOIN typegroupanime ON anime.aid = typegroupanime.aid 
-	INNER JOIN cvgroupanime ON anime.aid = cvgroupanime.aid;
+	INNER JOIN typegroupanime ON anime.AnimeID = typegroupanime.AnimeID 
+	INNER JOIN cvgroupanime ON anime.AnimeID = cvgroupanime.AnimeID;
 END
 ;;
 delimiter ;
@@ -489,11 +498,23 @@ DROP PROCEDURE IF EXISTS `findanimebyid`;
 delimiter ;;
 CREATE PROCEDURE `findanimebyid`(IN id INT)
 BEGIN
-	SELECT anime.aid,anime.aname,anime.ahot,anime.adesc,anime.alang,anime.astats,anime.acompany,anime.aepisode,anime.areldate,anime.arecommend,typegroupanime.type,cvgroupanime.cvname 
+	SELECT 
+	anime.AnimeID,
+	anime.AnimeName,
+	anime.AnimeHot,
+	anime.AnimeDescription,
+	anime.AnimeLanguage,
+	anime.AnimeStats,
+	anime.AnimeCompany,
+	anime.AnimeEpisode,
+	anime.AnimeReleaseDate,
+	anime.AnimeRecommend,
+	typegroupanime.AnimeType,
+	cvgroupanime.CVName  
 	FROM anime 
-	INNER JOIN typegroupanime ON anime.aid = typegroupanime.aid 
-	INNER JOIN cvgroupanime ON anime.aid = cvgroupanime.aid 
-	WHERE anime.aid = id;
+	INNER JOIN typegroupanime ON anime.AnimeID = typegroupanime.AnimeID
+	INNER JOIN cvgroupanime ON anime.AnimeID = cvgroupanime.AnimeID 
+	WHERE anime.AnimeID = id;
 END
 ;;
 delimiter ;
@@ -505,11 +526,23 @@ DROP PROCEDURE IF EXISTS `findanimelike`;
 delimiter ;;
 CREATE PROCEDURE `findanimelike`(IN name VARCHAR(255))
 BEGIN
-	SELECT anime.aid,anime.aname,anime.ahot,anime.adesc,anime.alang,anime.astats,anime.acompany,anime.aepisode,anime.areldate,anime.arecommend,typegroupanime.type,cvgroupanime.cvname 
+	SELECT
+	anime.AnimeID,
+	anime.AnimeName,
+	anime.AnimeHot,
+	anime.AnimeDescription,
+	anime.AnimeLanguage,
+	anime.AnimeStats,
+	anime.AnimeCompany,
+	anime.AnimeEpisode,
+	anime.AnimeReleaseDate,
+	anime.AnimeRecommend,
+	typegroupanime.AnimeType,
+	cvgroupanime.CVName 
 	FROM anime 
-	INNER JOIN typegroupanime ON anime.aid = typegroupanime.aid 
-	INNER JOIN cvgroupanime ON anime.aid = cvgroupanime.aid 
-	WHERE anime.aname LIKE name;
+	INNER JOIN typegroupanime ON anime.AnimeID = typegroupanime.AnimeID 
+	INNER JOIN cvgroupanime ON anime.AnimeID = cvgroupanime.AnimeID 
+	WHERE anime.AnimeName LIKE name;
 END
 ;;
 delimiter ;
@@ -521,7 +554,7 @@ DROP PROCEDURE IF EXISTS `findcomments`;
 delimiter ;;
 CREATE PROCEDURE `findcomments`(IN animeid INT)
 BEGIN
-	SELECT `user`.uname,`comment`.cmtext,`comment`.cmdate FROM `comment`,`user` WHERE `comment`.aid=animeid AND `user`.uid = `comment`.uid;
+	SELECT `user`.UserName,`comment`.CommentText,`comment`.CommentDate FROM `comment`,`user` WHERE `comment`.AnimeID=animeid AND `user`.UserID = `comment`.UserID;
 END
 ;;
 delimiter ;
@@ -545,7 +578,7 @@ DROP PROCEDURE IF EXISTS `recommandanimes`;
 delimiter ;;
 CREATE PROCEDURE `recommandanimes`()
 BEGIN
-	SELECT aid,aname,astats,adesc FROM anime WHERE anime.arecommend=1;
+	SELECT AnimeID,AnimeName,AnimeStats,AnimeDescription FROM anime WHERE anime.AnimeRecommend="true";
 END
 ;;
 delimiter ;
@@ -557,11 +590,11 @@ DROP PROCEDURE IF EXISTS `updatecv`;
 delimiter ;;
 CREATE PROCEDURE `updatecv`(in name VARCHAR(255),IN id INT)
 BEGIN
-	SET @cvid1 = (SELECT cvid FROM animecv WHERE cvname = name);
-	IF (SELECT COUNT(1) FROM cv2anime WHERE aid=id AND cvid=@cvid1) THEN
-	 SELECT * FROM cv2anime WHERE aid=id AND cvid=@cvid1;
+	SET @cvid1 = (SELECT CVID FROM animecv WHERE CVName = name);
+	IF (SELECT COUNT(1) FROM cv2anime WHERE AnimeID=id AND CVID=@cvid1) THEN
+	 SELECT * FROM cv2anime WHERE AnimeID=id AND CVID=@cvid1;
 	ELSE
-		INSERT INTO cv2anime(cvid,aid) VALUES(@cvid1,id);
+		INSERT INTO cv2anime(CVID,AnimeID) VALUES(@cvid1,id);
 	END IF;
 END
 ;;
@@ -574,11 +607,11 @@ DROP PROCEDURE IF EXISTS `updatetype`;
 delimiter ;;
 CREATE PROCEDURE `updatetype`(in type1 VARCHAR(255),IN id INT)
 BEGIN
-	SET @typeid = (SELECT tid FROM animetype WHERE type = type1);
-	IF (SELECT COUNT(1) FROM type2anime WHERE aid=id AND tid=@typeid) THEN
-		SELECT * FROM type2anime WHERE aid=id AND tid=@typeid;
+	SET @typeid = (SELECT TypeID FROM animetype WHERE Type = type1);
+	IF (SELECT COUNT(1) FROM type2anime WHERE AnimeID=id AND TypeID=@typeid) THEN
+		SELECT * FROM type2anime WHERE AnimeID=id AND TypeID=@typeid;
 	ELSE
-		INSERT INTO type2anime(tid,aid) VALUES(@typeid,id);
+		INSERT INTO type2anime(TypeID,AnimeID) VALUES(@typeid,id);
 	END IF;
 END
 ;;
@@ -601,7 +634,7 @@ delimiter ;
 DROP TRIGGER IF EXISTS `insertanime`;
 delimiter ;;
 CREATE TRIGGER `insertanime` AFTER INSERT ON `anime` FOR EACH ROW BEGIN
-INSERT INTO animeupdater VALUES(new.aid,1,current_timestamp());
+INSERT INTO animeupdater VALUES(new.AnimeID,1,current_timestamp());
 END
 ;;
 delimiter ;
@@ -612,7 +645,7 @@ delimiter ;
 DROP TRIGGER IF EXISTS `deleteanime`;
 delimiter ;;
 CREATE TRIGGER `deleteanime` AFTER DELETE ON `anime` FOR EACH ROW BEGIN
-DELETE FROM animeupdater WHERE animeupdater.aid = old.aid;
+DELETE FROM animeupdater WHERE animeupdater.AnimeID = old.AnimeID;
 END
 ;;
 delimiter ;
