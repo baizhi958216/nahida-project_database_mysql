@@ -11,7 +11,7 @@
  Target Server Version : 80031 (8.0.31)
  File Encoding         : 65001
 
- Date: 10/12/2022 00:08:55
+ Date: 13/12/2022 16:25:27
 */
 
 SET NAMES utf8mb4;
@@ -27,8 +27,9 @@ CREATE TABLE `admin`  (
   `AdminAccount` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '管理员账号',
   `AdminPassword` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '管理员密码',
   PRIMARY KEY (`AdminID`) USING BTREE,
-  INDEX `AdminAccount`(`AdminAccount` ASC) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+  INDEX `AdminAccount`(`AdminAccount` ASC) USING BTREE,
+  INDEX `AdminName`(`AdminName` ASC) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of admin
@@ -45,6 +46,7 @@ INSERT INTO `admin` VALUES (9, '宵宫', 'yoimiya', '123456');
 INSERT INTO `admin` VALUES (10, '钟离', 'zhongli', '123456');
 INSERT INTO `admin` VALUES (11, '垃圾佬', '123abc', '31d3323dss3');
 INSERT INTO `admin` VALUES (13, 'dsada', '123abcf', 'dasdasdadad');
+INSERT INTO `admin` VALUES (14, 'gg', 'gg', 'gg');
 
 -- ----------------------------
 -- Table structure for anime
@@ -179,8 +181,8 @@ CREATE TABLE `animeupdater`  (
   `AnimeID` int UNSIGNED NOT NULL,
   `AdminID` int UNSIGNED NOT NULL COMMENT '动漫上传者ID',
   `UpdateDate` datetime NOT NULL COMMENT '动漫ID',
-  INDEX `AdminID`(`AdminID` ASC) USING BTREE,
   INDEX `AnimeID`(`AnimeID` ASC) USING BTREE,
+  INDEX `AdminID`(`AdminID` ASC) USING BTREE,
   CONSTRAINT `animeupdater_ibfk_2` FOREIGN KEY (`AdminID`) REFERENCES `admin` (`AdminID`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -239,7 +241,7 @@ CREATE TABLE `cv2anime`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `CVID`(`CVID` ASC) USING BTREE,
   CONSTRAINT `cv2anime_ibfk_1` FOREIGN KEY (`CVID`) REFERENCES `animecv` (`CVID`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 100 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 106 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of cv2anime
@@ -295,14 +297,15 @@ INSERT INTO `cv2anime` VALUES (83, 3, 28);
 INSERT INTO `cv2anime` VALUES (84, 3, 29);
 INSERT INTO `cv2anime` VALUES (85, 3, 30);
 INSERT INTO `cv2anime` VALUES (86, 3, 31);
-INSERT INTO `cv2anime` VALUES (88, 11, 9);
-INSERT INTO `cv2anime` VALUES (89, 11, 10);
-INSERT INTO `cv2anime` VALUES (90, 11, 27);
-INSERT INTO `cv2anime` VALUES (91, 11, 11);
 INSERT INTO `cv2anime` VALUES (96, 1, 2);
 INSERT INTO `cv2anime` VALUES (97, 1, 3);
 INSERT INTO `cv2anime` VALUES (98, 1, 1);
 INSERT INTO `cv2anime` VALUES (99, 1, 4);
+INSERT INTO `cv2anime` VALUES (101, 11, 27);
+INSERT INTO `cv2anime` VALUES (102, 11, 14);
+INSERT INTO `cv2anime` VALUES (103, 11, 10);
+INSERT INTO `cv2anime` VALUES (104, 11, 9);
+INSERT INTO `cv2anime` VALUES (105, 11, 11);
 
 -- ----------------------------
 -- Table structure for image
@@ -332,6 +335,34 @@ INSERT INTO `image` VALUES (9, 1, '000009');
 INSERT INTO `image` VALUES (10, 1, '000010');
 
 -- ----------------------------
+-- Table structure for news
+-- ----------------------------
+DROP TABLE IF EXISTS `news`;
+CREATE TABLE `news`  (
+  `NewsID` int NOT NULL,
+  `NewsTitle` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  `NewsCategory` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  `NewsAuthor` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  `NewsDate` datetime NULL DEFAULT NULL,
+  `NewsViewCount` int NULL DEFAULT NULL,
+  `NewsContent` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
+  PRIMARY KEY (`NewsID`) USING BTREE,
+  UNIQUE INDEX `NewsID`(`NewsID` ASC) USING BTREE,
+  INDEX `NewsAuthor`(`NewsAuthor` ASC) USING BTREE,
+  CONSTRAINT `news_ibfk_1` FOREIGN KEY (`NewsAuthor`) REFERENCES `admin` (`AdminName`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of news
+-- ----------------------------
+INSERT INTO `news` VALUES (1, '《灌篮高手》特别资料艺术书收录作者极珍短篇漫画', '周边', '纳西妲', '2022-12-12 14:52:17', 883, '12月12日今天，为了与正在热映的《灌篮高手》全新动画电影《THE FIRST SLAM DUNK》助势联动，官方宣布于12月15日推出特别资料艺术书《THE FIRST SLAM DUNK re:SOURCE》，除了收录了原作者极珍短篇漫画《耳钉》外，还有更多珍贵资料！\r\n\r\n《灌篮高手THE FIRST SLAM DUNK》由原作者井上雄彦编剧执导，东映动画制作，武部聪志和10-FEET打造音乐，此前已于12月3日在日本上映，预定2023年1月12日在中国香港及澳门上映，1月13日在中国台湾上映。\r\n\r\n资料艺术书《THE FIRST SLAM DUNK re:SOURCE》收录了原作者井上雄彦在创作影片时的花絮和点点滴滴，而且收录了超珍贵的短篇漫画《耳钉》，整书176页，定价1980日元。');
+INSERT INTO `news` VALUES (2, '《进击的巨人》谏山创谈及自己对于漫威开始感到厌倦：「看了《女浩克》第一集后就没看了」', '其他', '纳西妲', '2022-12-13 14:54:13', 885, '\r\n\r\n日前日本漫画家谏山创老师，在接受外媒《Anime News Network》浅谈关于《进击的巨人》（进撃の巨人）的创作历程，以及漫画完结后的规划走向时，也额外谈及了一向热爱收看美剧的他，最近是否也有在迪士尼自家串流平台Disney+上，收看任何旗下的节目。\r\n\r\n「我的确订阅了蛮多的影视串流平台，在Disney+上也观看了不少有趣的作品。但坦白说，我其实已经开始对于漫威感到有些厌倦了，」谏山创老师回答道，「最近的话，是看了《律师女浩克》（She-Hulk: Attorney at Law）第一集后，就没有再持续看下去了。」\r\n\r\n「其实我都会固定在我自己所订阅的平台上，收看一些我很感兴趣的影视作品，就最近比较常关注的就是《杀手进城》（Barry）这部美剧了。不过，但也因为看的作品实在太多，我没有办法全部一一举例出来，真是不好意思。」谏山创老师说。\r\n\r\n事实上，自漫威电影宇宙开启第四阶段以来，就开始逐渐走下坡，甚至有不少观众也开始出现了「疲劳现象」，再加上品质每况愈下的窘境，使得观众对于超级英雄题材失去了兴趣，也许谏山创老师也是其中之一位也说不定。');
+INSERT INTO `news` VALUES (3, '《铁甲万能侠》动画歌之帝王 水木一郎大哥因癌离世 享寿 74 岁」', '其他', '纳西妲', '2022-12-12 14:55:12', 873, '\r\n\r\n人称「动画歌之帝王」的知名动漫歌手水木一郎，今天其事务所发表消息，他已经因肺癌而离世，享寿 74 岁\r\n\r\n跟据事务所 Yellow Bird 发表，水木一郎于 2022 年 12 月 6 日因肺癌而离世，对此心感哀悼之意。事务所同时透露了他于去年 4 月末发现患上肺癌，一直进行放射性与药物治疗，与病魔斗争了约 1 年 7 个月，直至 12 月 6 日在医院离世。\r\n\r\n他一直以「生涯现役」为目标，就算面对病魔也依然继续进行活动，就算不能进行如自己所愿的演出也继续坚持，在 11 月 27 日最后的舞台活动上也保持满面的笑容。\r\n\r\n水木一郎于 1968 年加盟成为日本古伦美亚唱片公司的歌手，曾演唱过《铁甲万能侠》、《巴比伦二世》、《宇宙骑士》、《幪面超人》、《超级战队系列》等众多主题曲，主唱的歌曲已超过了1000首，人称「动画歌之帝王」。');
+INSERT INTO `news` VALUES (4, '剧场版《灌篮高手The First》上映倒数仅剩1日　安西教练首度现身最新30秒宣传片', '电影', '纳西妲', '2022-12-02 14:57:03', 1102, '\r\n\r\n虽然中国台湾还需要再等上一个月的时间，才能够看到《灌篮高手》（SLAM DUNK）剧场版《灌篮高手The First》（THE FIRST SLAM DUNK），但日本就即将在2022年12月3日，也就是明天正式上映了！\r\n\r\n也因此，在今日东映动画官方再度于YouTube上释出全新30秒宣传影片，不仅樱木花道、流川枫、赤木刚宪、宫城良田，以及三井寿等湘北五位先发成员集结，坐镇于湘北队的「安西教练」也首度出现于本次预告影片中，看起来全国大赛篇真的是越来越有希望了！\r\n\r\n\r\n《灌篮高手》是于1990年时于集英社旗下杂志《週刊少年Jump》开始连载，讲述「外行人」樱木花道一开始只是为追求喜欢的女孩子赤木晴子而加入湘北篮球队，却也发现自己也渐渐喜欢上篮球这项运动。\r\n\r\n《灌篮高手The First》于日本2022年12月3日上映，中国台湾方面则是预计将在2023年1月13日上映，更多资讯有待片商日后的进一步公告。');
+INSERT INTO `news` VALUES (5, '2023年1月新番《生而为狗 我很幸福》猫谷美结 角色PV公开', '动画', '纳西妲', '2022-12-10 14:58:29', 1213, '\r\n\r\nTV动画《变成狗后被喜欢的人捡了。》（生而为狗 我很幸福）猫谷美结 角色PV公开，将于2023年1月6日开播。\r\n\r\n2023年1月新番《生而为狗 我很幸福》猫谷美结 角色PV公开\r\n\r\n2023年1月新番《生而为狗 我很幸福》猫谷美结 角色PV公开\r\n\r\n片头曲：《逆境☆不惑☆フラクション》\r\n作词：佐咲紗花　作曲・编曲曲：酒井陽一\r\n歌：橋本みゆき,榊原ゆい,Rita with AiRI,Ayumi.,片霧烈火,川村ゆみ,佐咲紗花,Duca,中恵光城,のみこ,美郷あき,yozuca*,rino,riya(eufonius)\r\n\r\n【STAFF】\r\n原作： 古川五勢（講談社「月刊少年マガジンR」連載）\r\n导演：安ドウタカシ\r\n视觉导演（Visual Director）：斉藤久\r\n角色设计・总作画监督：森田和明\r\n音乐：菊池達也（marble）\r\n音响监督：吉田光平\r\n动画制作：Quad\r\n\r\n【CAST】\r\nポチ太役：梅田修一朗\r\n犬飼加恋役：会沢紗弥\r\n猫谷ミケ役：相良茉優\r\n月城うさぎ役：小坂井祐莉絵');
+INSERT INTO `news` VALUES (6, '《进击的巨人》动画终章完结篇新艺图 众人对峙艾伦巨人', '动画', '纳西妲', '2022-11-14 14:59:25', 1143, '11月13日晚间，《进击的巨人》官方举行小型活动，公开了动画终章完结篇新艺图，主角众人对峙艾伦巨人走向完结，完结篇预定2023年开播，敬请期待。\r\n\r\n《进击的巨人》动画终章完结篇新艺图 众人对峙艾伦巨人\r\n\r\n •《进击的巨人》是日本漫画家谏山创创作的漫画作品，漫画已经于去年4月完结，这是他的首部连载作品，在讲谈社《别册少年Magazine》2009年10月号（创刊号）上开始连载。故事建立在人类与巨人的冲突上，人类居住在由高墙包围的城市，对抗会食人的巨人\r\n\r\n•2013年时《进击的巨人》TV动画首次播出，迅速在全世界刮起巨人风，称其当年的年度话题动漫也不为过，而第1话的题名《致二千年后的你》还有多少粉丝记得？经过漫长的9年时间，故事终于迎来了伏笔的兑现。\r\n\r\n•另外，作为预热，本周《进击的巨人》TV动画最终季的Part1与Part2的内容将于GYAO!重新发布，感兴趣的粉丝可以关注下了。');
+
+-- ----------------------------
 -- Table structure for type2anime
 -- ----------------------------
 DROP TABLE IF EXISTS `type2anime`;
@@ -343,7 +374,7 @@ CREATE TABLE `type2anime`  (
   INDEX `TypeID`(`TypeID` ASC) USING BTREE,
   INDEX `AnimeID`(`AnimeID` ASC) USING BTREE,
   CONSTRAINT `type2anime_ibfk_1` FOREIGN KEY (`TypeID`) REFERENCES `animetype` (`TypeID`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 72 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 79 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of type2anime
@@ -368,12 +399,14 @@ INSERT INTO `type2anime` VALUES (32, 5, 2);
 INSERT INTO `type2anime` VALUES (59, 6, 3);
 INSERT INTO `type2anime` VALUES (60, 3, 3);
 INSERT INTO `type2anime` VALUES (61, 1, 3);
-INSERT INTO `type2anime` VALUES (63, 8, 11);
-INSERT INTO `type2anime` VALUES (64, 11, 11);
-INSERT INTO `type2anime` VALUES (65, 12, 11);
 INSERT INTO `type2anime` VALUES (69, 6, 1);
 INSERT INTO `type2anime` VALUES (70, 2, 1);
 INSERT INTO `type2anime` VALUES (71, 1, 1);
+INSERT INTO `type2anime` VALUES (74, 8, 11);
+INSERT INTO `type2anime` VALUES (75, 11, 11);
+INSERT INTO `type2anime` VALUES (76, 12, 11);
+INSERT INTO `type2anime` VALUES (77, 7, 11);
+INSERT INTO `type2anime` VALUES (78, 6, 11);
 
 -- ----------------------------
 -- Table structure for user
@@ -397,8 +430,9 @@ CREATE TABLE `user`  (
 -- ----------------------------
 INSERT INTO `user` VALUES (1, '马化腾', 'mahuateng', 'mahuateng@qq.com', '123456', '2022-11-29', '我是马化腾', '男');
 INSERT INTO `user` VALUES (2, '马云', 'mayun', 'mayun@aliyun.com', '123456', '2022-11-29', '我是马云', '男');
-INSERT INTO `user` VALUES (3, '胡桃', 'hutao', 'hutao@mihoyo.com', '123456', '2022-11-29', '胡堂主是我', '女');
-INSERT INTO `user` VALUES (4, '莱依拉', '\r\nlayla ', 'layla@mihoyo', '123456', '2022-11-29', '你好', '女');
+INSERT INTO `user` VALUES (3, '胡桃', 'hutao', 'hutao@mihoyo.com', '1', '2022-11-29', '胡堂主是我', '女');
+INSERT INTO `user` VALUES (4, '莱依拉', '\r\nlayla', 'layla@mihoyo.com', '123456', '2022-11-29', '你好', '女');
+INSERT INTO `user` VALUES (5, 'm', 'm', NULL, 'm', '2022-12-12', NULL, '男');
 
 -- ----------------------------
 -- Table structure for yiyan
@@ -427,6 +461,7 @@ INSERT INTO `yiyan` VALUES (7, 1, '生命如同寓言，其价值不在于长短
 INSERT INTO `yiyan` VALUES (8, 1, '我和空太是恋人以上，友人未满的关系。', '樱花庄的宠物女孩');
 INSERT INTO `yiyan` VALUES (9, 1, '如果我们能活着出去的话，千山万水，你愿意陪我一起看吗？', '狐妖小红娘');
 INSERT INTO `yiyan` VALUES (10, 1, '一味地追求理想，总有一天会被现实背叛。', '名侦探柯南：绯色的子弹');
+INSERT INTO `yiyan` VALUES (11, 1, 'v', 'v');
 
 -- ----------------------------
 -- View structure for cvgroupanime
