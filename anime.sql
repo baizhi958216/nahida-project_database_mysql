@@ -11,11 +11,14 @@
  Target Server Version : 80031 (8.0.31)
  File Encoding         : 65001
 
- Date: 13/12/2022 16:25:27
+ Date: 14/12/2022 11:41:32
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
+
+CREATE DATABASE IF NOT EXISTS anime;
+USE anime;
 
 -- ----------------------------
 -- Table structure for admin
@@ -355,12 +358,16 @@ CREATE TABLE `news`  (
 -- ----------------------------
 -- Records of news
 -- ----------------------------
-INSERT INTO `news` VALUES (1, '《灌篮高手》特别资料艺术书收录作者极珍短篇漫画', '周边', '纳西妲', '2022-12-12 14:52:17', 883, '12月12日今天，为了与正在热映的《灌篮高手》全新动画电影《THE FIRST SLAM DUNK》助势联动，官方宣布于12月15日推出特别资料艺术书《THE FIRST SLAM DUNK re:SOURCE》，除了收录了原作者极珍短篇漫画《耳钉》外，还有更多珍贵资料！\r\n\r\n《灌篮高手THE FIRST SLAM DUNK》由原作者井上雄彦编剧执导，东映动画制作，武部聪志和10-FEET打造音乐，此前已于12月3日在日本上映，预定2023年1月12日在中国香港及澳门上映，1月13日在中国台湾上映。\r\n\r\n资料艺术书《THE FIRST SLAM DUNK re:SOURCE》收录了原作者井上雄彦在创作影片时的花絮和点点滴滴，而且收录了超珍贵的短篇漫画《耳钉》，整书176页，定价1980日元。');
-INSERT INTO `news` VALUES (2, '《进击的巨人》谏山创谈及自己对于漫威开始感到厌倦：「看了《女浩克》第一集后就没看了」', '其他', '纳西妲', '2022-12-13 14:54:13', 885, '\r\n\r\n日前日本漫画家谏山创老师，在接受外媒《Anime News Network》浅谈关于《进击的巨人》（进撃の巨人）的创作历程，以及漫画完结后的规划走向时，也额外谈及了一向热爱收看美剧的他，最近是否也有在迪士尼自家串流平台Disney+上，收看任何旗下的节目。\r\n\r\n「我的确订阅了蛮多的影视串流平台，在Disney+上也观看了不少有趣的作品。但坦白说，我其实已经开始对于漫威感到有些厌倦了，」谏山创老师回答道，「最近的话，是看了《律师女浩克》（She-Hulk: Attorney at Law）第一集后，就没有再持续看下去了。」\r\n\r\n「其实我都会固定在我自己所订阅的平台上，收看一些我很感兴趣的影视作品，就最近比较常关注的就是《杀手进城》（Barry）这部美剧了。不过，但也因为看的作品实在太多，我没有办法全部一一举例出来，真是不好意思。」谏山创老师说。\r\n\r\n事实上，自漫威电影宇宙开启第四阶段以来，就开始逐渐走下坡，甚至有不少观众也开始出现了「疲劳现象」，再加上品质每况愈下的窘境，使得观众对于超级英雄题材失去了兴趣，也许谏山创老师也是其中之一位也说不定。');
-INSERT INTO `news` VALUES (3, '《铁甲万能侠》动画歌之帝王 水木一郎大哥因癌离世 享寿 74 岁」', '其他', '纳西妲', '2022-12-12 14:55:12', 873, '\r\n\r\n人称「动画歌之帝王」的知名动漫歌手水木一郎，今天其事务所发表消息，他已经因肺癌而离世，享寿 74 岁\r\n\r\n跟据事务所 Yellow Bird 发表，水木一郎于 2022 年 12 月 6 日因肺癌而离世，对此心感哀悼之意。事务所同时透露了他于去年 4 月末发现患上肺癌，一直进行放射性与药物治疗，与病魔斗争了约 1 年 7 个月，直至 12 月 6 日在医院离世。\r\n\r\n他一直以「生涯现役」为目标，就算面对病魔也依然继续进行活动，就算不能进行如自己所愿的演出也继续坚持，在 11 月 27 日最后的舞台活动上也保持满面的笑容。\r\n\r\n水木一郎于 1968 年加盟成为日本古伦美亚唱片公司的歌手，曾演唱过《铁甲万能侠》、《巴比伦二世》、《宇宙骑士》、《幪面超人》、《超级战队系列》等众多主题曲，主唱的歌曲已超过了1000首，人称「动画歌之帝王」。');
-INSERT INTO `news` VALUES (4, '剧场版《灌篮高手The First》上映倒数仅剩1日　安西教练首度现身最新30秒宣传片', '电影', '纳西妲', '2022-12-02 14:57:03', 1102, '\r\n\r\n虽然中国台湾还需要再等上一个月的时间，才能够看到《灌篮高手》（SLAM DUNK）剧场版《灌篮高手The First》（THE FIRST SLAM DUNK），但日本就即将在2022年12月3日，也就是明天正式上映了！\r\n\r\n也因此，在今日东映动画官方再度于YouTube上释出全新30秒宣传影片，不仅樱木花道、流川枫、赤木刚宪、宫城良田，以及三井寿等湘北五位先发成员集结，坐镇于湘北队的「安西教练」也首度出现于本次预告影片中，看起来全国大赛篇真的是越来越有希望了！\r\n\r\n\r\n《灌篮高手》是于1990年时于集英社旗下杂志《週刊少年Jump》开始连载，讲述「外行人」樱木花道一开始只是为追求喜欢的女孩子赤木晴子而加入湘北篮球队，却也发现自己也渐渐喜欢上篮球这项运动。\r\n\r\n《灌篮高手The First》于日本2022年12月3日上映，中国台湾方面则是预计将在2023年1月13日上映，更多资讯有待片商日后的进一步公告。');
-INSERT INTO `news` VALUES (5, '2023年1月新番《生而为狗 我很幸福》猫谷美结 角色PV公开', '动画', '纳西妲', '2022-12-10 14:58:29', 1213, '\r\n\r\nTV动画《变成狗后被喜欢的人捡了。》（生而为狗 我很幸福）猫谷美结 角色PV公开，将于2023年1月6日开播。\r\n\r\n2023年1月新番《生而为狗 我很幸福》猫谷美结 角色PV公开\r\n\r\n2023年1月新番《生而为狗 我很幸福》猫谷美结 角色PV公开\r\n\r\n片头曲：《逆境☆不惑☆フラクション》\r\n作词：佐咲紗花　作曲・编曲曲：酒井陽一\r\n歌：橋本みゆき,榊原ゆい,Rita with AiRI,Ayumi.,片霧烈火,川村ゆみ,佐咲紗花,Duca,中恵光城,のみこ,美郷あき,yozuca*,rino,riya(eufonius)\r\n\r\n【STAFF】\r\n原作： 古川五勢（講談社「月刊少年マガジンR」連載）\r\n导演：安ドウタカシ\r\n视觉导演（Visual Director）：斉藤久\r\n角色设计・总作画监督：森田和明\r\n音乐：菊池達也（marble）\r\n音响监督：吉田光平\r\n动画制作：Quad\r\n\r\n【CAST】\r\nポチ太役：梅田修一朗\r\n犬飼加恋役：会沢紗弥\r\n猫谷ミケ役：相良茉優\r\n月城うさぎ役：小坂井祐莉絵');
-INSERT INTO `news` VALUES (6, '《进击的巨人》动画终章完结篇新艺图 众人对峙艾伦巨人', '动画', '纳西妲', '2022-11-14 14:59:25', 1143, '11月13日晚间，《进击的巨人》官方举行小型活动，公开了动画终章完结篇新艺图，主角众人对峙艾伦巨人走向完结，完结篇预定2023年开播，敬请期待。\r\n\r\n《进击的巨人》动画终章完结篇新艺图 众人对峙艾伦巨人\r\n\r\n •《进击的巨人》是日本漫画家谏山创创作的漫画作品，漫画已经于去年4月完结，这是他的首部连载作品，在讲谈社《别册少年Magazine》2009年10月号（创刊号）上开始连载。故事建立在人类与巨人的冲突上，人类居住在由高墙包围的城市，对抗会食人的巨人\r\n\r\n•2013年时《进击的巨人》TV动画首次播出，迅速在全世界刮起巨人风，称其当年的年度话题动漫也不为过，而第1话的题名《致二千年后的你》还有多少粉丝记得？经过漫长的9年时间，故事终于迎来了伏笔的兑现。\r\n\r\n•另外，作为预热，本周《进击的巨人》TV动画最终季的Part1与Part2的内容将于GYAO!重新发布，感兴趣的粉丝可以关注下了。');
+INSERT INTO `news` VALUES (1, '《灌篮高手》特别资料艺术书收录作者极珍短篇漫画', '周边', '纳西妲', '2022-12-12 14:52:17', 883, '<p>12月12日今天，为了与正在热映的《灌篮高手》全新动画电影《THE FIRST SLAM DUNK》助势联动，官方宣布于12月15日推出特别资料艺术书《THE FIRST SLAM DUNK\r\n        re:SOURCE》，除了收录了原作者极珍短篇漫画《耳钉》外，还有更多珍贵资料！<br>\r\n        《灌篮高手THE FIRST SLAM\r\n        DUNK》由原作者井上雄彦编剧执导，东映动画制作，武部聪志和10-FEET打造音乐，此前已于12月3日在日本上映，预定2023年1月12日在中国香港及澳门上映，1月13日在中国台湾上映。<br>\r\n        资料艺术书《THE FIRST SLAM DUNK re:SOURCE》收录了原作者井上雄彦在创作影片时的花絮和点点滴滴，而且收录了超珍贵的短篇漫画《耳钉》，整书176页，定价1980日元。\r\n    </p>');
+INSERT INTO `news` VALUES (2, '《进击的巨人》谏山创谈及自己对于漫威开始感到厌倦：「看了《女浩克》第一集后就没看了」', '其他', '纳西妲', '2022-12-13 14:54:13', 885, '<p>日前日本漫画家谏山创老师，在接受外媒《Anime News\r\n        Network》浅谈关于《进击的巨人》（进撃の巨人）的创作历程，以及漫画完结后的规划走向时，也额外谈及了一向热爱收看美剧的他，最近是否也有在迪士尼自家串流平台Disney+上，收看任何旗下的节目。<br>\r\n        「我的确订阅了蛮多的影视串流平台，在Disney+上也观看了不少有趣的作品。但坦白说，我其实已经开始对于漫威感到有些厌倦了，」谏山创老师回答道，「最近的话，是看了《律师女浩克》（She-Hulk: Attorney at\r\n        Law）第一集后，就没有再持续看下去了。」<br>\r\n        「其实我都会固定在我自己所订阅的平台上，收看一些我很感兴趣的影视作品，就最近比较常关注的就是《杀手进城》（Barry）这部美剧了。不过，但也因为看的作品实在太多，我没有办法全部一一举例出来，真是不好意思。」谏山创老师说。\r\n    </p>\r\n    <p>事实上，自漫威电影宇宙开启第四阶段以来，就开始逐渐走下坡，甚至有不少观众也开始出现了「疲劳现象」，再加上品质每况愈下的窘境，使得观众对于超级英雄题材失去了兴趣，也许谏山创老师也是其中之一位也说不定。</p>\r\n');
+INSERT INTO `news` VALUES (3, '《铁甲万能侠》动画歌之帝王 水木一郎大哥因癌离世 享寿 74 岁」', '其他', '纳西妲', '2022-12-12 14:55:12', 873, '<p>人称「动画歌之帝王」的知名动漫歌手水木一郎，今天其事务所发表消息，他已经因肺癌而离世，享寿 74 岁<br>\r\n跟据事务所 Yellow Bird 发表，水木一郎于 2022 年 12 月 6 日因肺癌而离世，对此心感哀悼之意。事务所同时透露了他于去年 4 月末发现患上肺癌，一直进行放射性与药物治疗，与病魔斗争了约 1 年 7 个月，直至 12 月 6 日在医院离世。</p>\r\n<p>他一直以「生涯现役」为目标，就算面对病魔也依然继续进行活动，就算不能进行如自己所愿的演出也继续坚持，在 11 月 27 日最后的舞台活动上也保持满面的笑容。</p>\r\n<p>水木一郎于 1968 年加盟成为日本古伦美亚唱片公司的歌手，曾演唱过《铁甲万能侠》、《巴比伦二世》、《宇宙骑士》、《幪面超人》、《超级战队系列》等众多主题曲，主唱的歌曲已超过了1000首，人称「动画歌之帝王」。</p>\r\n');
+INSERT INTO `news` VALUES (4, '剧场版《灌篮高手The First》上映倒数仅剩1日　安西教练首度现身最新30秒宣传片', '电影', '纳西妲', '2022-12-02 14:57:03', 1102, '<p>虽然中国台湾还需要再等上一个月的时间，才能够看到《灌篮高手》（SLAM DUNK）剧场版《灌篮高手The First》（THE FIRST SLAM DUNK），但日本就即将在2022年12月3日，也就是明天正式上映了！\r\n    </p>\r\n    <p>也因此，在今日东映动画官方再度于YouTube上释出全新30秒宣传影片，不仅樱木花道、流川枫、赤木刚宪、宫城良田，以及三井寿等湘北五位先发成员集结，坐镇于湘北队的「安西教练」也首度出现于本次预告影片中，看起来全国大赛篇真的是越来越有希望了！<br>\r\n    </p>\r\n    <p><iframe src=\"//player.bilibili.com/player.html?aid=220794330&amp;bvid=BV1j841157Z7&amp;cid=909528777&amp;page=1\"\r\n            scrolling=\"no\" allowfullscreen=\"allowfullscreen\" data-origwidth=\"600\" data-origheight=\"380\"\r\n            style=\"width: 466px; height: 485.767px;\" width=\"466\" height=\"380\" frameborder=\"no\"><span\r\n                data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\"\r\n                class=\"mce_SELRES_start\">﻿</span> </iframe><br>\r\n        《灌篮高手》是于1990年时于集英社旗下杂志《週刊少年Jump》开始连载，讲述「外行人」樱木花道一开始只是为追求喜欢的女孩子赤木晴子而加入湘北篮球队，却也发现自己也渐渐喜欢上篮球这项运动。</p>\r\n    <p>《灌篮高手The First》于日本2022年12月3日上映，中国台湾方面则是预计将在2023年1月13日上映，更多资讯有待片商日后的进一步公告。</p>');
+INSERT INTO `news` VALUES (5, '2023年1月新番《生而为狗 我很幸福》猫谷美结 角色PV公开', '动画', '纳西妲', '2022-12-10 14:58:29', 1213, '<p>TV动画《变成狗后被喜欢的人捡了。》（生而为狗 我很幸福）猫谷美结 角色PV公开，将于2023年1月6日开播。</p>\r\n<p>片头曲：《逆境☆不惑☆フラクション》<br>\r\n作词：佐咲紗花　作曲・编曲曲：酒井陽一<br>\r\n歌：橋本みゆき,榊原ゆい,Rita with AiRI,Ayumi.,片霧烈火,川村ゆみ,佐咲紗花,Duca,中恵光城,のみこ,美郷あき,yozuca*,rino,riya(eufonius)</p>\r\n<p>【STAFF】<br>\r\n原作： 古川五勢（講談社「月刊少年マガジンR」連載）<br>\r\n导演：安ドウタカシ<br>\r\n视觉导演（Visual Director）：斉藤久<br>\r\n角色设计・总作画监督：森田和明<br>\r\n音乐：菊池達也（marble）<br>\r\n音响监督：吉田光平<br>\r\n动画制作：Quad</p>\r\n<p>【CAST】<br>\r\nポチ太役：梅田修一朗<br>\r\n犬飼加恋役：会沢紗弥<br>\r\n猫谷ミケ役：相良茉優<br>\r\n月城うさぎ役：小坂井祐莉絵</p>');
+INSERT INTO `news` VALUES (6, '《进击的巨人》动画终章完结篇新艺图 众人对峙艾伦巨人', '动画', '纳西妲', '2022-11-14 14:59:25', 1143, '<p>11月13日晚间，《进击的巨人》官方举行小型活动，公开了动画终章完结篇新艺图，主角众人对峙艾伦巨人走向完结，完结篇预定2023年开播，敬请期待。</p>\r\n\r\n    <p>&nbsp;•《进击的巨人》是日本漫画家谏山创创作的漫画作品，漫画已经于去年4月完结，这是他的首部连载作品，在讲谈社《别册少年Magazine》2009年10月号（创刊号）上开始连载。故事建立在人类与巨人的冲突上，人类居住在由高墙包围的城市，对抗会食人的巨人\r\n    </p>\r\n    <p>•2013年时《进击的巨人》TV动画首次播出，迅速在全世界刮起巨人风，称其当年的年度话题动漫也不为过，而第1话的题名《致二千年后的你》还有多少粉丝记得？经过漫长的9年时间，故事终于迎来了伏笔的兑现。</p>\r\n    <p>•另外，作为预热，本周《进击的巨人》TV动画最终季的Part1与Part2的内容将于GYAO!重新发布，感兴趣的粉丝可以关注下了。</p>\r\n');
+INSERT INTO `news` VALUES (7, '轻小说《我推是反派大小姐》TV动画化、先导PV公开', '动画', '纳西妲', '2022-12-14 09:52:47', 865, '<p>轻小说作家いのり。原作、花ヶ田插画轻小说《我推是反派大小姐》宣布TV动画化，先导PV、视觉图与贺图公开，将于2023年播出。</p>\n<p><iframe class=\"wpjam_video\" src=\"https://player.bilibili.com/player.html?bvid=BV1Av4y197e4\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\" data-origwidth=\"600\" data-origheight=\"380\" style=\"width: 466px; height: 373.667px;\" width=\"466\" height=\"380\" frameborder=\"no\"></iframe></p>\n<p>「虽然我是乙女向游戏的女主角，但我不能喜欢反派大小姐吗？」<br>\n就职于黑心企业的社畜OL大桥零转生成为了乙女向游戏「Revolution」的女主角。<br>\n转生后的她想做的，不是与攻略对象们谈恋爱——而是一味地疼爱调戏反派大小姐克莱尔·弗朗索瓦。</p>\n<p>不仅没有对克莱尔的坏心眼产生反感，反而还高兴地接受了。将自己别扭的爱转向蕾的反派大小姐克莱尔，她的未来究竟是哪边？</p>\n<p>【STAFF】<br>\nスタッフ<br>\n原作：いのり。（愛中出版・一迅社刊）<br>\n角色原案：花ヶ田、青乃下<br>\n导演：大庭秀昭<br>\n系列构成・剧本：久尾歩<br>\n角色设计：佐藤陽子<br>\n音响监督：高桑一<br>\n音乐：朝倉紀行・兎と馬<br>\n动画制作：プラチナビジョン</p>\n<p>【CAST】<br>\nレイ＝テイラー：芹澤優<br>\nクレア＝フランソワ：奈波果林</p>');
+INSERT INTO `news` VALUES (8, '2023年1月新番《不相信人类的冒险者们好像要去拯救世界》角色PV缇娅娜篇公开', '动画', '纳西妲', '2022-12-14 09:56:19', 863, '<p>TV动画《不相信人类的冒险者们好像要去拯救世界》角色PV第二弹缇娅娜篇及视觉图公开，将于2023年1月10开播</p>\n<p><iframe class=\"wpjam_video\" src=\"https://player.bilibili.com/player.html?bvid=BV1WP4y1D7B7\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\" data-origwidth=\"600\" data-origheight=\"380\" style=\"width: 466px; height: 373.667px;\" width=\"466\" height=\"380\" frameborder=\"no\"></iframe></p>\n<p>缇娅娜 CV：渡部纱弓</p>\n<p>被解除婚约并遭到驱逐的原贵族千金。<br>\n沦为平民后迷上了赌博。<br>\n使用魔杖释放魔法，不擅长土和火属性。</p>\n<p>【STAFF】<br>\n原作：富士伸太（『人间不信の冒険者たちが世界を救うようです』MFブックス/KADOKAWA刊）<br>\n角色原案：黒井ススム<br>\n原作企画：フロンティアワークス<br>\n导演・系列构成：伊魔崎斋<br>\n角色设计・总作画监督：长尾浩生<br>\n道具设计：野沢弘树<br>\n色彩设计：近藤直登<br>\n美术监督：SeoJungho<br>\n美术设定：中原英统<br>\n助导演・撮影监督・编集：堀川和人<br>\n音乐：高桥 谅<br>\n音响监督：纳谷僚介<br>\n音乐制作：波丽佳音<br>\n音乐制作协力：Apdream<br>\n动画制作：GEEKTOYS<br>\n动画制作协力：Seven</p>\n<p>【CAST】<br>\nニック：小林裕介<br>\nティアーナ：渡部纱弓<br>\nカラン：菊池纱矢香<br>\nゼム：土岐隼一<br>\nキズナ：小松未可子<br>\nアゲート：石原夏织</p>');
+INSERT INTO `news` VALUES (9, 'TV动画《SSSS.古立特》与《SSSS.电光机王》剧场总集篇PV 与主视觉图公开', '动画', '纳西妲', '2022-12-14 09:59:16', 829, '<p>TV动画《SSSS.古立特》与《SSSS.电光机王》剧场总集篇宣布将分别于2023年1月20日、3月10日在日本剧场限定两周上映，并同时公开了PV 与主视觉图</p>\n<p><iframe class=\"wpjam_video\" src=\"https://player.bilibili.com/player.html?bvid=BV1GK411r7uU\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\" data-origwidth=\"600\" data-origheight=\"380\" style=\"width: 466px; height: 373.667px;\" width=\"466\" height=\"380\" frameborder=\"no\"></iframe></p>\n<p><img width=\"466\" decoding=\"async\" title=\"TV动画《SSSS.古立特》与《SSSS.电光机王》剧场总集篇PV 与主视觉图公开\" src=\"http://tvax4.sinaimg.cn/large/006yt1Omgy1h92h1gnqpqj30xc1b4qkt.jpg\" alt=\"TV动画《SSSS.古立特》与《SSSS.电光机王》剧场总集篇PV 与主视觉图公开\"></p>\n<p><iframe class=\"wpjam_video\" src=\"https://player.bilibili.com/player.html?bvid=BV19V4y1w7Jq\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\" data-origwidth=\"600\" data-origheight=\"380\" style=\"width: 466px; height: 373.667px;\" width=\"466\" height=\"380\" frameborder=\"no\"></iframe></p>');
+INSERT INTO `news` VALUES (10, '《无职转生II》确定2023年内播出，内山夕实通过再次试音，续演少年期鲁迪乌斯', '声优', '纳西妲', '2022-12-14 10:07:42', 843, '<p>电视动画《无职转生 II ～到了异世界就拿出真本事～》公开前导海报。本作描述 34 岁家裡蹲男性转生到剑与魔法的异世界，成为一名叫作鲁迪乌斯的少年，开始了新的人生。第二期前导海报中可以看到长大了的鲁迪乌斯，以及后方穿著斗篷的白发角色。<br>\n<img decoding=\"async\" class=\"size-full wp-image-6230 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239281.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239281.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239281.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\"><br>\n延续第一期，鲁迪乌斯由内山夕实声演，不过在决定人选之前，制作组其实展开了相当长时间的讨论，最后请内山夕实重新试音之后，再度录取她。内山表示：「这次我依旧担任二期动画中鲁迪乌斯的配音。鲁迪乌斯在作品中的成长是相当重要的要素，制作组慎重地重新试音之后才选择了我，也让我再次绷紧了神经，想要带著这样的心情来面对这次的配音。」</p>\n<p>(c)理不尽な孙の手/MFブックス/「无职転生 Ⅱ」製作委员会</p>');
 
 -- ----------------------------
 -- Table structure for type2anime
@@ -432,7 +439,6 @@ INSERT INTO `user` VALUES (1, '马化腾', 'mahuateng', 'mahuateng@qq.com', '123
 INSERT INTO `user` VALUES (2, '马云', 'mayun', 'mayun@aliyun.com', '123456', '2022-11-29', '我是马云', '男');
 INSERT INTO `user` VALUES (3, '胡桃', 'hutao', 'hutao@mihoyo.com', '1', '2022-11-29', '胡堂主是我', '女');
 INSERT INTO `user` VALUES (4, '莱依拉', '\r\nlayla', 'layla@mihoyo.com', '123456', '2022-11-29', '你好', '女');
-INSERT INTO `user` VALUES (5, 'm', 'm', NULL, 'm', '2022-12-12', NULL, '男');
 
 -- ----------------------------
 -- Table structure for yiyan
@@ -595,6 +601,21 @@ END
 delimiter ;
 
 -- ----------------------------
+-- Procedure structure for findnewslike
+-- ----------------------------
+DROP PROCEDURE IF EXISTS `findnewslike`;
+delimiter ;;
+CREATE PROCEDURE `findnewslike`(IN name VARCHAR(255))
+BEGIN
+	SELECT
+	*
+	FROM news
+	WHERE news.NewsTitle LIKE name;
+END
+;;
+delimiter ;
+
+-- ----------------------------
 -- Procedure structure for rb
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `rb`;
@@ -607,11 +628,11 @@ end
 delimiter ;
 
 -- ----------------------------
--- Procedure structure for recommandanimes
+-- Procedure structure for recommendanimes
 -- ----------------------------
-DROP PROCEDURE IF EXISTS `recommandanimes`;
+DROP PROCEDURE IF EXISTS `recommendanimes`;
 delimiter ;;
-CREATE PROCEDURE `recommandanimes`()
+CREATE PROCEDURE `recommendanimes`()
 BEGIN
 	SELECT AnimeID,AnimeName,AnimeStats,AnimeDescription FROM anime WHERE anime.AnimeRecommend="true";
 END
