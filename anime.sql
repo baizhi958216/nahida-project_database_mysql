@@ -11,14 +11,11 @@
  Target Server Version : 80031 (8.0.31)
  File Encoding         : 65001
 
- Date: 14/12/2022 11:41:32
+ Date: 15/12/2022 14:48:28
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
-
-CREATE DATABASE IF NOT EXISTS anime;
-USE anime;
 
 -- ----------------------------
 -- Table structure for admin
@@ -68,7 +65,7 @@ CREATE TABLE `anime`  (
   `AnimeDescription` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '动漫剧情',
   PRIMARY KEY (`AnimeID`) USING BTREE,
   INDEX `AnimeName`(`AnimeName` ASC) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 21 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of anime
@@ -83,6 +80,16 @@ INSERT INTO `anime` VALUES (7, '式守同学不只可爱而已', '动画工房',
 INSERT INTO `anime` VALUES (8, '关于我转生变成史莱姆这档事 第一季', '8bit', '2018-10-02', 24, '已完结', '日语', 12, 'false', '史莱姆生活，开始了。上班族的三上悟在道路上被歹徒给刺杀身亡后，回过神来发现自己转生到了异世界。不过，自己居然是“史莱姆”！他在得到利姆鲁这个名字后开始了自己的史莱姆人生，随着与各个种族相处交流的过程中，他定下了一个目标——那就是“建立一个任何种族都能愉快地一起生活的国家”！');
 INSERT INTO `anime` VALUES (9, '恋爱FLOPS', 'Passione', '2022-10-12', 8, '连载中', '日语', 22, 'true', '平凡的男子高中生柏树朝，像往常一样走在一成不变的通学路上。\r\n然而，正和出门前无意间打开的电视里播放的奇妙占卜说的一样，他在这个早晨遭遇到了各种各样的灾难。\r\n在一个接一个发生的灾难中，朝和5名少女发生了可说是最糟糕的相遇。\r\n当他身心俱疲、好不容易到达学校时，作为转校生和新任教师的5名少女的身影却再次出现在了他的面前。\r\n朝努力隐藏自己的脸，但根本藏不住……\r\n自称是朝的好友伊集院好雄，向朝询问与5人之间的关系。\r\n随着与5人相处，解开了彼此之间的误会，关系也稍微融洽了一些。\r\n放学后，朝打开鞋柜准备回家，却发现里面放着一封情书。\r\n寄件人不明的情书上，写着“在校舍后面的樱花树下等你”。这也如占卜所说的一样。\r\n事到如今，打算把一切都弄清楚的朝，向樱花树下走去。\r\n樱花飞舞的季节，5阵恋风带来的淡淡苦闷的青春爱情故事，现在，拉开帷幕!');
 INSERT INTO `anime` VALUES (10, '摇曳百合', '动画工房', '2011-07-04', 12, '已完结', '日语', 12, 'false', '从今天起，有点天然呆的灯里（三上枝织 配音）正式成为一名初中生，开学第一天灯里加入了好友京子（大坪由佳 配音）和结衣（津田美波 配音）所在的“娱乐部”。所谓娱乐部，其实她们只是占领了已经废部的茶道社办公室，社团活动也只不过是各种优哉游哉的喝茶闲聊。灯里的同班同学千夏（大久保瑠美 配音）因为憧憬着隶属茶道社的姐姐，阴错阳差地加入了她们。\r\n　　四名少女在娱乐部度着轻松欢乐、又带点百合情节的日子，京子极其喜欢外形可爱的千夏，千夏则喜欢着很会照顾人的结衣。这样一来，身为主人公的灯里无形中受到了冷落，大家在娱乐部展开了讨论会，结果会引发什么样的爆笑故事？同时，擅自占用教室一事，引来了学生会的关注，娱乐部会面临废部危机吗？');
+INSERT INTO `anime` VALUES (11, '摇曳百合2', '动画工房', '2012-07-02', 12, '已完结', '日语', 7, 'false', '故事发生在氛围轻松制度宽松的七森中学，为了打发无聊的课后时光，个性天真单纯的少女赤座灯里（三上枝织 配音）伙同童年好友岁纳京子（大坪由佳 配音）与船见结衣（津田美波 配音），利用荒废已久的茶道社组成了一个名为“娱乐部”的活动社团。之后，又有表面善良内心却极为腹黑的女孩吉川千夏（大久保瑠美 配音）在误打误撞之中加入，就这样，这个山寨社团的四人小组成立了。\n　　在这个没有正式申请的社团中，每天都发生着欢乐又爆笑的日常，可是没过多久，娱乐部的存在便被学生会发现了。作为副部长，杉浦绫乃（藤田咲 配音）怎能对此坐视不管？在娱乐部和学生会之间，一场轰轰烈烈的猫鼠大战开始了。');
+INSERT INTO `anime` VALUES (12, '摇曳百合3', 'TYO Animations', '2015-08-05', 12, '已完结', '日语', 19, 'false', '故事发生在七森中学中，茶道社因为人气不佳最终面临闭社的悲惨命运，单纯天真懵懂无知的赤座灯里（三上枝织 配音）、开朗热情的暴走少女岁纳京子（大坪由佳 配音）、沉默寡言但却是吐槽担当的船见结衣（津田美波 配音）和看似可爱人畜无害实则十分腹黑的吉川千夏（大久保瑠美 配音）四名女生占据了茶道社的活动教室，在这里另起炉灶成立了娱乐部。故事的序幕就此拉开。\n　　娱乐部的存在竟然引起了学生会的注意，身世神秘的会长松本理世（后藤沙绪里 配音）和傲娇不坦率的副会长杉浦绫乃（藤田咲 配音）的介入让本来就热闹的社团生活增添了一份欢乐。');
+INSERT INTO `anime` VALUES (13, '五等分的新娘 剧场版', 'Bibury Animation Studios', '2022-05-20', 1, '已完结', '日语', 0, 'true', '「濒临留级」、「讨厌念书」的五胞胎美少女，\n和身为兼差的家教老师，将他们引导到「毕业」的风太郎。\n迄今为止的努力都得到了回报，升上高三的五胞胎完成了毕业旅行，\n每个人都朝着「毕业」后的未来前行。\n与风太郎共度的时光中，五胞胎先后察觉到了自己对风太郎的爱意。\n风太郎与五胞胎的爱情会如何!? 未来的新娘是……\n可爱度500%的五胞胎恋爱喜剧，迎来完结──!! ');
+INSERT INTO `anime` VALUES (14, '孤独摇滚！', '芳文社', '2022-10-08', 9, '连载中', '日语', 16, 'true', '作为网络吉他手“Guitar Hero”而广受好评的后藤独，在现实中却是个什么都不会的沟通障碍者。独有着组建乐队的梦想，但因为不敢向人主动搭话而一直没有成功，直到一天在公园中被伊地知虹夏发现并邀请进入缺少吉他手的“结束乐队”。可是，完全没有和他人合作经历的独，在人前完全发挥不出原本的实力。为了努力克服沟通障碍，独与“结束乐队”的成员们一同开始努力…… ');
+INSERT INTO `anime` VALUES (15, '调教咖啡厅', 'A-1 Pictures', '2017-10-07', 12, '已完结', '日语', 0, 'false', '来到了有着傲娇、妹系等各种“属性”的咖啡厅，新人店员莓香竟然被店长要求\"抖S\"属性！？努力工作的同时，意外的也让\"抖S\"才能渐渐开花……充满欢乐的打工由此展开！');
+INSERT INTO `anime` VALUES (16, '魔王学院的不适合者', 'SILVER LINK.', '2020-07-04', 13, '已完结', '日语', 0, 'false', '历经两千年的时光，苏醒了的暴虐魔王——\n但他在培育魔王候补的学院中的适性却是——“不适任”？！\n尽管具备能毁灭人类、精灵，甚至是众神的力量，暴虐魔王“阿诺斯·伏尔迪哥德”却厌倦了永无止尽的斗争，梦想着和平的世界进行转生。然而在两千年后，转生后的他所迎来的，却是调节和平生活而变得过于弱小的子孙们，以及各种衰退至极的魔法。\n阿诺斯虽然进入了对被视作魔王转世之人进行集中教育的“魔王学院”，但学院却无法看出他的实力，使得他被刻上不适任者这一烙印。不仅如此，传说中的魔王还变成了和自己完全不同的其他人。\n在众人都瞧不起他的环境里，他将唯一亲切对待自己的少女米夏纳为部下，作为不适任者（魔王），在魔族的等级制度上迈向巅峰。\n“不论天理、命运还是奇迹，在我的眼前只有俯首受戮一途而已。”');
+INSERT INTO `anime` VALUES (17, '冰菓', '京都动画', '2012-04-22', 22, '已完结', '日语', 0, 'false', '在众多将要展开「玫瑰色」生活的高中生之中，本作的男主角折木奉太郎却是一个「灰色」的节能主义者。凡是没必要的事就不做，因为不想后悔，被人说是疏离、厌世也无所谓，因为这就是他的作风。这样的折木奉太郎，却因为姐姐的命令而进入了濒临废社的「古籍研究社」。研究社虽然好不容易招到了四名新社员，但却又卷入了四十五年前社长突然肄业的谜团之中。社长当年留下的名为「冰菓」的社刊，内里究竟隐藏了什么神秘的讯息呢……');
+INSERT INTO `anime` VALUES (18, '雏子的笔记', 'Passione', '2017-04-07', 12, '已完结', '日语', 0, 'false', '樱木雏子是个不擅长和人交流的女孩子。为了改变一见人就像稻草人一样僵住的自己，以升入有着自己憧憬的演剧部的高中为契机而离开乡下的雏子，来到了住宿地点四季庄。那里住着喜爱书与食物的玖井菜、虽然年长却小巧玲珑又擅长料理的真雪、沉默而又身材拔群的房东千秋等住客……！？虽然有点奇怪却充满魅力的四季庄住民，与前稻草人少女所展开的可爱又快乐的演剧喜剧现在开幕！');
+INSERT INTO `anime` VALUES (19, '宇崎学妹想要玩!', 'ENGI', '2022-07-10', 12, '已完结', '日语', 13, 'false', '性格有些孤僻喜爱安静的大学３年级生，樱井真一。总是被小一届，同高中毕业的学妹宇崎花，以各种照顾爱耍孤僻的学长的名义为由，进行各种无厘头的纠缠。虽然一开始觉得有点困扰，但却逐渐习惯起来…');
+INSERT INTO `anime` VALUES (20, '宇崎酱想要玩耍 第二季', 'ENGI', '2022-10-01', 10, '连载中', '日语', 0, 'true', '#宇崎学妹想要玩#第二季制作决定！');
 
 -- ----------------------------
 -- Table structure for animecv
@@ -92,63 +99,91 @@ CREATE TABLE `animecv`  (
   `CVID` int UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'CVID',
   `CVName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'CV名字',
   PRIMARY KEY (`CVID`) USING BTREE,
-  UNIQUE INDEX `CVName`(`CVName` ASC) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 52 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+  UNIQUE INDEX `CVName`(`CVID` ASC) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 82 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of animecv
 -- ----------------------------
-INSERT INTO `animecv` VALUES (38, 'Lynn');
-INSERT INTO `animecv` VALUES (9, '三上枝织');
-INSERT INTO `animecv` VALUES (28, '丰口惠美');
+INSERT INTO `animecv` VALUES (1, '本渡枫');
+INSERT INTO `animecv` VALUES (2, '花泽香菜');
+INSERT INTO `animecv` VALUES (3, '黑泽朋世');
+INSERT INTO `animecv` VALUES (4, '日笠阳子');
+INSERT INTO `animecv` VALUES (5, '若山诗音');
+INSERT INTO `animecv` VALUES (6, '安济知佳');
 INSERT INTO `animecv` VALUES (7, '久野美咲');
-INSERT INTO `animecv` VALUES (14, '伊藤美来');
-INSERT INTO `animecv` VALUES (37, '会泽纱弥');
-INSERT INTO `animecv` VALUES (15, '佐仓绫音');
-INSERT INTO `animecv` VALUES (26, '内田修一');
-INSERT INTO `animecv` VALUES (42, '内田彩');
 INSERT INTO `animecv` VALUES (8, '冈咲美保');
-INSERT INTO `animecv` VALUES (47, '冈本信彦');
-INSERT INTO `animecv` VALUES (29, '前野智昭');
-INSERT INTO `animecv` VALUES (32, '千叶翔也');
-INSERT INTO `animecv` VALUES (51, '千本木彩花');
-INSERT INTO `animecv` VALUES (30, '古川慎');
-INSERT INTO `animecv` VALUES (23, '和气杏未');
-INSERT INTO `animecv` VALUES (21, '增田俊树');
+INSERT INTO `animecv` VALUES (9, '三上枝织');
 INSERT INTO `animecv` VALUES (10, '大久保瑠美');
 INSERT INTO `animecv` VALUES (11, '大坪由佳');
-INSERT INTO `animecv` VALUES (18, '大西沙织');
-INSERT INTO `animecv` VALUES (6, '安济知佳');
-INSERT INTO `animecv` VALUES (20, '宫下早纪');
-INSERT INTO `animecv` VALUES (24, '小仓唯');
-INSERT INTO `animecv` VALUES (31, '小林亲弘');
-INSERT INTO `animecv` VALUES (19, '山下诚一郎');
-INSERT INTO `animecv` VALUES (34, '指出毬亚');
-INSERT INTO `animecv` VALUES (4, '日笠阳子');
-INSERT INTO `animecv` VALUES (46, '日高里菜');
-INSERT INTO `animecv` VALUES (1, '本渡枫');
 INSERT INTO `animecv` VALUES (12, '松冈祯丞');
-INSERT INTO `animecv` VALUES (45, '松冈美里');
-INSERT INTO `animecv` VALUES (40, '松田健一郎');
-INSERT INTO `animecv` VALUES (44, '梅田修一朗');
-INSERT INTO `animecv` VALUES (16, '水濑祈');
-INSERT INTO `animecv` VALUES (27, '津田美波');
-INSERT INTO `animecv` VALUES (39, '渡边明乃');
-INSERT INTO `animecv` VALUES (33, '田中美海');
-INSERT INTO `animecv` VALUES (48, '福山润');
 INSERT INTO `animecv` VALUES (13, '竹达彩奈');
-INSERT INTO `animecv` VALUES (50, '花守由美里');
-INSERT INTO `animecv` VALUES (2, '花泽香菜');
-INSERT INTO `animecv` VALUES (5, '若山诗音');
-INSERT INTO `animecv` VALUES (43, '逢坂良太');
-INSERT INTO `animecv` VALUES (25, '野上翔');
-INSERT INTO `animecv` VALUES (49, '金元寿子');
-INSERT INTO `animecv` VALUES (41, '长谷川芳明');
-INSERT INTO `animecv` VALUES (22, '高桥未奈美');
-INSERT INTO `animecv` VALUES (36, '高桥李依');
-INSERT INTO `animecv` VALUES (35, '高野麻里佳');
-INSERT INTO `animecv` VALUES (3, '黑泽朋世');
+INSERT INTO `animecv` VALUES (14, '伊藤美来');
+INSERT INTO `animecv` VALUES (15, '佐仓绫音');
+INSERT INTO `animecv` VALUES (16, '水濑祈');
 INSERT INTO `animecv` VALUES (17, '齐藤壮马');
+INSERT INTO `animecv` VALUES (18, '大西沙织');
+INSERT INTO `animecv` VALUES (19, '山下诚一郎');
+INSERT INTO `animecv` VALUES (20, '宫下早纪');
+INSERT INTO `animecv` VALUES (21, '增田俊树');
+INSERT INTO `animecv` VALUES (22, '高桥未奈美');
+INSERT INTO `animecv` VALUES (23, '和气杏未');
+INSERT INTO `animecv` VALUES (24, '小仓唯');
+INSERT INTO `animecv` VALUES (25, '野上翔');
+INSERT INTO `animecv` VALUES (26, '内田修一');
+INSERT INTO `animecv` VALUES (27, '津田美波');
+INSERT INTO `animecv` VALUES (28, '丰口惠美');
+INSERT INTO `animecv` VALUES (29, '前野智昭');
+INSERT INTO `animecv` VALUES (30, '古川慎');
+INSERT INTO `animecv` VALUES (31, '小林亲弘');
+INSERT INTO `animecv` VALUES (32, '千叶翔也');
+INSERT INTO `animecv` VALUES (33, '田中美海');
+INSERT INTO `animecv` VALUES (34, '指出毬亚');
+INSERT INTO `animecv` VALUES (35, '高野麻里佳');
+INSERT INTO `animecv` VALUES (36, '高桥李依');
+INSERT INTO `animecv` VALUES (37, '会泽纱弥');
+INSERT INTO `animecv` VALUES (38, 'Lynn');
+INSERT INTO `animecv` VALUES (39, '渡边明乃');
+INSERT INTO `animecv` VALUES (40, '松田健一郎');
+INSERT INTO `animecv` VALUES (41, '长谷川芳明');
+INSERT INTO `animecv` VALUES (42, '内田彩');
+INSERT INTO `animecv` VALUES (43, '逢坂良太');
+INSERT INTO `animecv` VALUES (44, '梅田修一朗');
+INSERT INTO `animecv` VALUES (45, '松冈美里');
+INSERT INTO `animecv` VALUES (46, '日高里菜');
+INSERT INTO `animecv` VALUES (47, '冈本信彦');
+INSERT INTO `animecv` VALUES (48, '福山润');
+INSERT INTO `animecv` VALUES (49, '金元寿子');
+INSERT INTO `animecv` VALUES (50, '花守由美里');
+INSERT INTO `animecv` VALUES (51, '千本木彩花');
+INSERT INTO `animecv` VALUES (52, '青山吉能');
+INSERT INTO `animecv` VALUES (53, '铃代纱弓');
+INSERT INTO `animecv` VALUES (54, '水野朔');
+INSERT INTO `animecv` VALUES (55, '长谷川育美');
+INSERT INTO `animecv` VALUES (56, '鬼头明里');
+INSERT INTO `animecv` VALUES (57, '春野杏');
+INSERT INTO `animecv` VALUES (58, '种崎敦美');
+INSERT INTO `animecv` VALUES (59, '德井青空');
+INSERT INTO `animecv` VALUES (60, '铃木达央');
+INSERT INTO `animecv` VALUES (61, '楠木灯');
+INSERT INTO `animecv` VALUES (62, '夏吉优子');
+INSERT INTO `animecv` VALUES (63, '中村悠一');
+INSERT INTO `animecv` VALUES (64, '佐藤聪美');
+INSERT INTO `animecv` VALUES (65, '阪口大助');
+INSERT INTO `animecv` VALUES (66, '雪野五月');
+INSERT INTO `animecv` VALUES (67, '置鲇龙太郎');
+INSERT INTO `animecv` VALUES (68, '由加奈');
+INSERT INTO `animecv` VALUES (69, '小山茉美');
+INSERT INTO `animecv` VALUES (70, '早见沙织');
+INSERT INTO `animecv` VALUES (71, '茅野爱衣');
+INSERT INTO `animecv` VALUES (72, 'M·A·O');
+INSERT INTO `animecv` VALUES (73, '富田美忧');
+INSERT INTO `animecv` VALUES (74, '东城日沙子');
+INSERT INTO `animecv` VALUES (75, '吉田有里');
+INSERT INTO `animecv` VALUES (76, '大空直美');
+INSERT INTO `animecv` VALUES (77, '赤羽根健治');
+INSERT INTO `animecv` VALUES (78, '高木朋弥');
+INSERT INTO `animecv` VALUES (79, '秋元羊介');
 
 -- ----------------------------
 -- Table structure for animetype
@@ -202,6 +237,16 @@ INSERT INTO `animeupdater` VALUES (7, 1, '2022-12-04 23:13:58');
 INSERT INTO `animeupdater` VALUES (8, 1, '2022-12-04 23:14:04');
 INSERT INTO `animeupdater` VALUES (9, 1, '2022-12-04 23:14:09');
 INSERT INTO `animeupdater` VALUES (10, 1, '2022-12-04 23:14:15');
+INSERT INTO `animeupdater` VALUES (11, 1, '2022-12-15 03:21:55');
+INSERT INTO `animeupdater` VALUES (12, 1, '2022-12-15 03:22:42');
+INSERT INTO `animeupdater` VALUES (13, 1, '2022-12-15 03:23:23');
+INSERT INTO `animeupdater` VALUES (14, 1, '2022-12-15 03:28:42');
+INSERT INTO `animeupdater` VALUES (15, 1, '2022-12-15 03:30:38');
+INSERT INTO `animeupdater` VALUES (16, 1, '2022-12-15 03:32:15');
+INSERT INTO `animeupdater` VALUES (17, 1, '2022-12-15 03:35:08');
+INSERT INTO `animeupdater` VALUES (18, 1, '2022-12-15 03:36:53');
+INSERT INTO `animeupdater` VALUES (19, 1, '2022-12-15 03:38:37');
+INSERT INTO `animeupdater` VALUES (20, 1, '2022-12-15 03:39:34');
 
 -- ----------------------------
 -- Table structure for comment
@@ -212,26 +257,28 @@ CREATE TABLE `comment`  (
   `CommentDate` datetime NULL DEFAULT NULL COMMENT '回复日期',
   `CommentText` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '回复内容',
   `UserID` int UNSIGNED NOT NULL COMMENT '用户ID',
-  `AmimeID` int UNSIGNED NOT NULL COMMENT '动漫ID',
+  `AnimeID` int UNSIGNED NOT NULL COMMENT '动漫ID',
   PRIMARY KEY (`CommentID`) USING BTREE,
-  INDEX `UserID`(`UserID` ASC, `AmimeID` ASC) USING BTREE,
-  INDEX `AmimeID`(`AmimeID` ASC) USING BTREE,
-  CONSTRAINT `comment_ibfk_2` FOREIGN KEY (`AmimeID`) REFERENCES `anime` (`AnimeID`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+  INDEX `UserID`(`UserID` ASC, `AnimeID` ASC) USING BTREE,
+  INDEX `AmimeID`(`AnimeID` ASC) USING BTREE,
+  CONSTRAINT `comment_ibfk_2` FOREIGN KEY (`AnimeID`) REFERENCES `anime` (`AnimeID`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 21 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of comment
 -- ----------------------------
 INSERT INTO `comment` VALUES (1, '2022-12-03 19:19:57', '对伊蕾娜一直不离不弃，一心一意，一直默默无闻的陪伴在伊蕾娜左右的存在又是谁呢——\r\n扫帚:没错，就是我', 1, 1);
 INSERT INTO `comment` VALUES (2, '2022-12-03 19:21:56', '你看，你看这伊蕾娜，刚来就摸别人的手，实在是太屑了！！！就是，就是，这个伊蕾娜真是太屑了！！！', 2, 1);
-INSERT INTO `comment` VALUES (4, '2022-12-04 23:22:03', '来了，到处留现地妻的女人是谁？\r\n\r\n没错，就是我，\r\n\r\n来了，到处留现地妻的女人是谁？没错，就是我，伊蕾娜。', 2, 1);
-INSERT INTO `comment` VALUES (5, '2022-12-04 23:22:33', '为什么这部番没有魔男？因为魔男在更衣室里', 3, 1);
-INSERT INTO `comment` VALUES (6, '2022-12-04 23:23:09', '真想不到这个公路番经费这么足，甚至人物线条比隔壁非常可爱和夜叉姬还要好看！伊雷娜实在是太漂亮了！', 4, 1);
-INSERT INTO `comment` VALUES (7, '2022-12-04 23:23:30', '老婆老婆老婆老婆老婆老婆老婆老婆老婆恰个v', 1, 1);
-INSERT INTO `comment` VALUES (8, '2022-12-04 23:24:16', '泷奈：杀入东京，夺了鸟位。千束哥哥当大总统，我们几个做大官。大口吃牛排，大碗喝红酒，大秤分刀乐。', 1, 2);
-INSERT INTO `comment` VALUES (9, '2022-12-04 23:24:39', '我是鱼鱼，哈哈哈，我是鳗鱼，嗨害嗨', 2, 2);
-INSERT INTO `comment` VALUES (10, '2022-12-04 23:25:10', '心脏:无所谓 我会逃走', 2, 2);
-INSERT INTO `comment` VALUES (11, '2022-12-04 23:25:35', 'da是真的垃 系统日常宕机 一线作战人员也没点警觉 看到无人机在动都没点反应 我的评价是还不如叙利亚民兵', 4, 2);
+INSERT INTO `comment` VALUES (3, '2022-12-04 23:22:03', '我的！我的！', 2, 1);
+INSERT INTO `comment` VALUES (4, '2022-12-04 23:22:33', '为什么这部番没有魔男？因为魔男在更衣室里', 3, 1);
+INSERT INTO `comment` VALUES (5, '2022-12-04 23:23:09', '真想不到这个公路番经费这么足，甚至人物线条比隔壁非常可爱和夜叉姬还要好看！伊雷娜实在是太漂亮了！', 4, 1);
+INSERT INTO `comment` VALUES (6, '2022-12-04 23:23:30', '老婆老婆老婆老婆老婆老婆老婆老婆老婆恰个v', 1, 1);
+INSERT INTO `comment` VALUES (7, '2022-12-04 23:24:16', '泷奈：杀入东京，夺了鸟位。千束哥哥当大总统，我们几个做大官。大口吃牛排，大碗喝红酒，大秤分刀乐。', 1, 2);
+INSERT INTO `comment` VALUES (8, '2022-12-04 23:24:39', '我是鱼鱼，哈哈哈，我是鳗鱼，嗨害嗨', 2, 2);
+INSERT INTO `comment` VALUES (9, '2022-12-04 23:25:10', '心脏:无所谓 我会逃走', 2, 2);
+INSERT INTO `comment` VALUES (10, '2022-12-04 23:25:35', 'da是真的垃 系统日常宕机 一线作战人员也没点警觉 看到无人机在动都没点反应 我的评价是还不如叙利亚民兵', 4, 2);
+INSERT INTO `comment` VALUES (11, '2022-12-15 10:57:20', '别问，都是我老婆', 5, 5);
+INSERT INTO `comment` VALUES (12, '2022-12-15 11:04:02', '啊', 5, 1);
 
 -- ----------------------------
 -- Table structure for cv2anime
@@ -244,7 +291,7 @@ CREATE TABLE `cv2anime`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `CVID`(`CVID` ASC) USING BTREE,
   CONSTRAINT `cv2anime_ibfk_1` FOREIGN KEY (`CVID`) REFERENCES `animecv` (`CVID`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 106 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 157 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of cv2anime
@@ -309,6 +356,57 @@ INSERT INTO `cv2anime` VALUES (102, 11, 14);
 INSERT INTO `cv2anime` VALUES (103, 11, 10);
 INSERT INTO `cv2anime` VALUES (104, 11, 9);
 INSERT INTO `cv2anime` VALUES (105, 11, 11);
+INSERT INTO `cv2anime` VALUES (106, 12, 9);
+INSERT INTO `cv2anime` VALUES (107, 12, 11);
+INSERT INTO `cv2anime` VALUES (108, 12, 27);
+INSERT INTO `cv2anime` VALUES (109, 12, 10);
+INSERT INTO `cv2anime` VALUES (110, 13, 12);
+INSERT INTO `cv2anime` VALUES (111, 13, 2);
+INSERT INTO `cv2anime` VALUES (112, 13, 13);
+INSERT INTO `cv2anime` VALUES (113, 13, 14);
+INSERT INTO `cv2anime` VALUES (114, 13, 15);
+INSERT INTO `cv2anime` VALUES (115, 13, 16);
+INSERT INTO `cv2anime` VALUES (116, 14, 52);
+INSERT INTO `cv2anime` VALUES (117, 14, 53);
+INSERT INTO `cv2anime` VALUES (118, 14, 54);
+INSERT INTO `cv2anime` VALUES (119, 14, 55);
+INSERT INTO `cv2anime` VALUES (120, 15, 23);
+INSERT INTO `cv2anime` VALUES (121, 15, 56);
+INSERT INTO `cv2anime` VALUES (122, 15, 57);
+INSERT INTO `cv2anime` VALUES (123, 15, 58);
+INSERT INTO `cv2anime` VALUES (124, 15, 59);
+INSERT INTO `cv2anime` VALUES (125, 15, 29);
+INSERT INTO `cv2anime` VALUES (126, 15, 60);
+INSERT INTO `cv2anime` VALUES (127, 16, 60);
+INSERT INTO `cv2anime` VALUES (128, 16, 61);
+INSERT INTO `cv2anime` VALUES (129, 16, 62);
+INSERT INTO `cv2anime` VALUES (130, 17, 63);
+INSERT INTO `cv2anime` VALUES (131, 17, 64);
+INSERT INTO `cv2anime` VALUES (132, 17, 65);
+INSERT INTO `cv2anime` VALUES (133, 17, 71);
+INSERT INTO `cv2anime` VALUES (134, 17, 66);
+INSERT INTO `cv2anime` VALUES (135, 17, 67);
+INSERT INTO `cv2anime` VALUES (136, 17, 68);
+INSERT INTO `cv2anime` VALUES (137, 17, 69);
+INSERT INTO `cv2anime` VALUES (138, 17, 70);
+INSERT INTO `cv2anime` VALUES (139, 18, 72);
+INSERT INTO `cv2anime` VALUES (140, 18, 73);
+INSERT INTO `cv2anime` VALUES (141, 18, 24);
+INSERT INTO `cv2anime` VALUES (142, 18, 74);
+INSERT INTO `cv2anime` VALUES (143, 18, 35);
+INSERT INTO `cv2anime` VALUES (144, 18, 75);
+INSERT INTO `cv2anime` VALUES (145, 19, 76);
+INSERT INTO `cv2anime` VALUES (146, 19, 77);
+INSERT INTO `cv2anime` VALUES (147, 19, 13);
+INSERT INTO `cv2anime` VALUES (148, 19, 78);
+INSERT INTO `cv2anime` VALUES (149, 19, 79);
+INSERT INTO `cv2anime` VALUES (150, 19, 70);
+INSERT INTO `cv2anime` VALUES (151, 20, 76);
+INSERT INTO `cv2anime` VALUES (152, 20, 77);
+INSERT INTO `cv2anime` VALUES (153, 20, 13);
+INSERT INTO `cv2anime` VALUES (154, 20, 78);
+INSERT INTO `cv2anime` VALUES (155, 20, 79);
+INSERT INTO `cv2anime` VALUES (156, 20, 70);
 
 -- ----------------------------
 -- Table structure for image
@@ -381,7 +479,7 @@ CREATE TABLE `type2anime`  (
   INDEX `TypeID`(`TypeID` ASC) USING BTREE,
   INDEX `AnimeID`(`AnimeID` ASC) USING BTREE,
   CONSTRAINT `type2anime_ibfk_1` FOREIGN KEY (`TypeID`) REFERENCES `animetype` (`TypeID`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 79 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 96 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of type2anime
@@ -414,6 +512,23 @@ INSERT INTO `type2anime` VALUES (75, 11, 11);
 INSERT INTO `type2anime` VALUES (76, 12, 11);
 INSERT INTO `type2anime` VALUES (77, 7, 11);
 INSERT INTO `type2anime` VALUES (78, 6, 11);
+INSERT INTO `type2anime` VALUES (79, 8, 12);
+INSERT INTO `type2anime` VALUES (80, 11, 12);
+INSERT INTO `type2anime` VALUES (81, 12, 12);
+INSERT INTO `type2anime` VALUES (82, 11, 13);
+INSERT INTO `type2anime` VALUES (83, 11, 14);
+INSERT INTO `type2anime` VALUES (84, 7, 14);
+INSERT INTO `type2anime` VALUES (85, 10, 14);
+INSERT INTO `type2anime` VALUES (86, 7, 15);
+INSERT INTO `type2anime` VALUES (87, 8, 15);
+INSERT INTO `type2anime` VALUES (88, 3, 16);
+INSERT INTO `type2anime` VALUES (89, 7, 17);
+INSERT INTO `type2anime` VALUES (90, 11, 17);
+INSERT INTO `type2anime` VALUES (91, 8, 18);
+INSERT INTO `type2anime` VALUES (92, 7, 18);
+INSERT INTO `type2anime` VALUES (93, 11, 19);
+INSERT INTO `type2anime` VALUES (94, 8, 20);
+INSERT INTO `type2anime` VALUES (95, 10, 20);
 
 -- ----------------------------
 -- Table structure for user
@@ -439,6 +554,7 @@ INSERT INTO `user` VALUES (1, '马化腾', 'mahuateng', 'mahuateng@qq.com', '123
 INSERT INTO `user` VALUES (2, '马云', 'mayun', 'mayun@aliyun.com', '123456', '2022-11-29', '我是马云', '男');
 INSERT INTO `user` VALUES (3, '胡桃', 'hutao', 'hutao@mihoyo.com', '1', '2022-11-29', '胡堂主是我', '女');
 INSERT INTO `user` VALUES (4, '莱依拉', '\r\nlayla', 'layla@mihoyo.com', '123456', '2022-11-29', '你好', '女');
+INSERT INTO `user` VALUES (5, 'm', 'm', NULL, 'm', '2022-12-14', NULL, '男');
 
 -- ----------------------------
 -- Table structure for yiyan
@@ -476,6 +592,12 @@ DROP VIEW IF EXISTS `cvgroupanime`;
 CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `cvgroupanime` AS select `anime`.`AnimeID` AS `AnimeID`,`anime`.`AnimeName` AS `AnimeName`,group_concat(`animecv`.`CVName` separator ',') AS `CVName` from ((`anime` join `cv2anime`) join `animecv`) where ((`anime`.`AnimeID` = `cv2anime`.`AnimeID`) and (`animecv`.`CVID` = `cv2anime`.`CVID`)) group by `anime`.`AnimeID`,`anime`.`AnimeName`;
 
 -- ----------------------------
+-- View structure for getallanime
+-- ----------------------------
+DROP VIEW IF EXISTS `getallanime`;
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `getallanime` AS select `anime`.`AnimeID` AS `AnimeID`,`anime`.`AnimeName` AS `AnimeName`,`anime`.`AnimeHot` AS `AnimeHot`,`anime`.`AnimeDescription` AS `AnimeDescription`,`anime`.`AnimeLanguage` AS `AnimeLanguage`,`anime`.`AnimeStats` AS `AnimeStats`,`anime`.`AnimeCompany` AS `AnimeCompany`,`anime`.`AnimeEpisode` AS `AnimeEpisode`,`anime`.`AnimeReleaseDate` AS `AnimeReleaseDate`,`anime`.`AnimeRecommend` AS `AnimeRecommend`,`typegroupanime`.`AnimeType` AS `AnimeType`,`cvgroupanime`.`CVName` AS `CVName` from ((`anime` join `typegroupanime` on((`anime`.`AnimeID` = `typegroupanime`.`AnimeID`))) join `cvgroupanime` on((`anime`.`AnimeID` = `cvgroupanime`.`AnimeID`)));
+
+-- ----------------------------
 -- View structure for typegroupanime
 -- ----------------------------
 DROP VIEW IF EXISTS `typegroupanime`;
@@ -501,6 +623,18 @@ delimiter ;;
 CREATE PROCEDURE `admin_login`(IN account VARCHAR(255))
 BEGIN
 	SELECT AdminPassword FROM admin WHERE AdminAccount = account;
+END
+;;
+delimiter ;
+
+-- ----------------------------
+-- Procedure structure for filteranime
+-- ----------------------------
+DROP PROCEDURE IF EXISTS `filteranime`;
+delimiter ;;
+CREATE PROCEDURE `filteranime`()
+BEGIN
+	SELECT * FROM getallanime join type2anime on (type2anime.TypeID=1);
 END
 ;;
 delimiter ;
@@ -595,7 +729,7 @@ DROP PROCEDURE IF EXISTS `findcomments`;
 delimiter ;;
 CREATE PROCEDURE `findcomments`(IN animeid INT)
 BEGIN
-	SELECT `user`.UserName,`comment`.CommentText,`comment`.CommentDate FROM `comment`,`user` WHERE `comment`.AnimeID=animeid AND `user`.UserID = `comment`.UserID;
+	SELECT `user`.UserName,`comment`.CommentText,`comment`.CommentDate FROM `comment`,`user` WHERE comment.AnimeID=animeid AND `user`.UserID = `comment`.UserID;
 END
 ;;
 delimiter ;
