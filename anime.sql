@@ -11,7 +11,7 @@
  Target Server Version : 80031 (8.0.31)
  File Encoding         : 65001
 
- Date: 15/12/2022 14:48:28
+ Date: 22/12/2022 16:12:36
 */
 
 SET NAMES utf8mb4;
@@ -73,23 +73,23 @@ CREATE TABLE `anime`  (
 INSERT INTO `anime` VALUES (1, '魔女之旅', 'C2C', '2020-10-02', 12, '已完结', '日语', 6, 'false', '某个地方有一位旅人，她的名字是伊蕾娜。是一位年纪轻轻就成了魔法使中最上位「魔女」的天才。因为向往着幼时读过的旅行故事，随意地进行着漫长的旅行。在这个广阔的世界里自由地漫步，接触着形形色色有趣的人，体味着人们美好的日常生活，她作为一名旅人，不带有任何目的地接触着各种国家的各色人群。还有同样数量的——「不必理会我。我只是一介旅人罢了。接下来还得继续前往下一个地方呢。」由魔女伊蕾娜所连接的，关于相遇和离别的故事……。');
 INSERT INTO `anime` VALUES (2, '莉可丽丝', 'A-1 Pictures', '2022-07-02', 13, '已完结', '日语', 20, 'false', '安宁的日常——背后却暗藏秘密将犯罪防患于未然的秘密组织——“DA（Direct Attack）”隶属于DA的少女特工——“莉可丽丝”理所当然的日常，都要归功于她们。咖啡厅“莉可莉可” 作为DA支部，员工有号称史上最强莉可丽丝的精英·锦木千束、优秀却暗藏隐情的莉可丽丝·井上泷奈。这里供应的不光是咖啡和甜品，还有照顾孩子、代为购物、教外国人日语等服务，全都不像是“莉可丽丝”会做的事。自由随性又乐天的和平主义者·千束和效率至上的泷奈，反差巨大的两人组成搭档，开始了忙忙碌碌的每一天。');
 INSERT INTO `anime` VALUES (3, '关于我转生变成史莱姆这档事 第二季', '8bit', '2021-01-05', 26, '已完结', '日语', 12, 'false', '主人公利姆鲁与仰慕他而聚集的众多魔物们所建立的国家「鸠拉·特恩佩斯特国」，经由与邻国的协议及交易，让「人类与魔物共同漫步的国家」这一温柔的理想逐步成形。利姆鲁作为曾是人类的史莱姆当然拥有「对人类的好意」……但这个世界中却存在着明确的「对魔物的敌意」。当这不合理的现实摆在眼前时，利姆鲁将做出选择。为了「什么都不想失去」——万众期待的转生喜剧突入暴风的新章！');
-INSERT INTO `anime` VALUES (4, '被开除出勇者队伍的驯兽使，邂逅了最强种猫耳少女', 'EMT SQUARED', '2022-10-02', 9, '连载中', '日语', 23, 'true', '“雷因，你被解雇了”突然有一天，雷因被驱逐出勇者的队伍。他选择当一个冒险家作为以后生命之路，在考试期间帮助一个摔倒的女孩。女孩名为奏，是最最强大的“猫灵族”！受到奏的邀请，雷因作为驭兽使，两人决定签订契约并组成一个队伍。在另一方面，失去雷因的勇者队伍开始意识到他的重要性。“喵……和雷因在一起的时候，总是感到惊讶”\n“不会无聊吧？”“……哇！是啊”使役一切的驭兽使和最强的伙伴凌驾于勇者队伍——。和重要的伙伴相遇并成长的冒险幻想！');
-INSERT INTO `anime` VALUES (5, '夫妇以上，恋人未满。', 'studio MOTHER', '2022-10-09', 8, '连载中', '日语', 32, 'true', '不起眼的男高中生药院次郎，在“夫妻实习”的课堂上，和绝对不可能有关系的班上的美少女渡边星一起生活。他们对彼此的印象也很差。“阴”和“阳”不匹配非常刺激。洗完澡后的突发事件，突然的接触麻烦！？次郎虽然闷闷不乐，但还是下意识地想……“喂，真的好好地玩夫妻游戏吧”互相有想法的次郎和星为了得到交换组合的权利，认真地扮演夫妻。然而，酸甜苦辣的夫妻生活逐渐让彼此意识到各自的魅力。比“恋人”更刺激的，辣妹和无异性缘男生的“夫妻游戏”开始了  。');
+INSERT INTO `anime` VALUES (4, '被开除出勇者队伍的驯兽使，邂逅了最强种猫耳少女', 'EMT SQUARED', '2022-10-02', 12, '连载中', '日语', 23, 'true', '“雷因，你被解雇了”突然有一天，雷因被驱逐出勇者的队伍。他选择当一个冒险家作为以后生命之路，在考试期间帮助一个摔倒的女孩。女孩名为奏，是最最强大的“猫灵族”！受到奏的邀请，雷因作为驭兽使，两人决定签订契约并组成一个队伍。在另一方面，失去雷因的勇者队伍开始意识到他的重要性。“喵……和雷因在一起的时候，总是感到惊讶”\n“不会无聊吧？”“……哇！是啊”使役一切的驭兽使和最强的伙伴凌驾于勇者队伍——。和重要的伙伴相遇并成长的冒险幻想！');
+INSERT INTO `anime` VALUES (5, '夫妇以上，恋人未满。', 'studio MOTHER', '2022-10-09', 11, '连载中', '日语', 32, 'true', '不起眼的男高中生药院次郎，在“夫妻实习”的课堂上，和绝对不可能有关系的班上的美少女渡边星一起生活。他们对彼此的印象也很差。“阴”和“阳”不匹配非常刺激。洗完澡后的突发事件，突然的接触麻烦！？次郎虽然闷闷不乐，但还是下意识地想……“喂，真的好好地玩夫妻游戏吧”互相有想法的次郎和星为了得到交换组合的权利，认真地扮演夫妻。然而，酸甜苦辣的夫妻生活逐渐让彼此意识到各自的魅力。比“恋人”更刺激的，辣妹和无异性缘男生的“夫妻游戏”开始了  。');
 INSERT INTO `anime` VALUES (6, '契约之吻', 'A-1 Pictures', '2022-07-02', 13, '已完结', '日语', 20, 'false', '“贝隆市”——不属于任何国家，漂浮在太平洋上的巨型浮岛型城市。因其开采新能源资源“欧尔贡矿”而在这个世界上占有一席之地，贝隆市也经常发生被称为“D灾害”的由“恶魔”引起的特殊事件。\r\n只有一小部分人知道D灾害的存在，对其进行处理的是“PMC”（民间军事公司），生活在贝隆市的青年修则经营着一家，但公司的规模很小，而且修还要找工作，所以资金周转总是很困难。\r\n公私不分地、献身地支撑着修的生活的，是在贝隆市的学校上学的美少女高中生木更。还有一个，是修曾经所属的大型PMC的职员，也是他的前女友绫乃，她现在依然很关心修，对木更没有好感。\r\n木更对修有着强烈的执着，其根本在于两人的“契约”。\r\n她的真面目是恶魔。\r\n木更支撑着修的生活，也根据契约协助消灭恶魔。\r\n其代价是甜蜜而危险的“吻”。爱与契约，两人危险的羁绊。命运将会走向何方……');
 INSERT INTO `anime` VALUES (7, '式守同学不只可爱而已', '动画工房', '2022-04-09', 12, '已完结', '日语', 22, 'false', '超级“帅气女友“登场！ 和泉是一名拥有不幸体质的高中男生，他有一个和他同班的女朋友，叫做式守。 式守的笑容十分甜美、温柔，跟和泉在一起的时候脸上总是洋溢着幸福。她平时可爱动人，心中满是爱情，但只要看到和泉遇到危险，她就会……摇身一变，变成“帅气女友”！满是可爱×帅气的式守跟和泉将与他们的小伙伴一起带来无限愉快的日常！1000%美好的爱情喜剧，即将开幕！');
 INSERT INTO `anime` VALUES (8, '关于我转生变成史莱姆这档事 第一季', '8bit', '2018-10-02', 24, '已完结', '日语', 12, 'false', '史莱姆生活，开始了。上班族的三上悟在道路上被歹徒给刺杀身亡后，回过神来发现自己转生到了异世界。不过，自己居然是“史莱姆”！他在得到利姆鲁这个名字后开始了自己的史莱姆人生，随着与各个种族相处交流的过程中，他定下了一个目标——那就是“建立一个任何种族都能愉快地一起生活的国家”！');
-INSERT INTO `anime` VALUES (9, '恋爱FLOPS', 'Passione', '2022-10-12', 8, '连载中', '日语', 22, 'true', '平凡的男子高中生柏树朝，像往常一样走在一成不变的通学路上。\r\n然而，正和出门前无意间打开的电视里播放的奇妙占卜说的一样，他在这个早晨遭遇到了各种各样的灾难。\r\n在一个接一个发生的灾难中，朝和5名少女发生了可说是最糟糕的相遇。\r\n当他身心俱疲、好不容易到达学校时，作为转校生和新任教师的5名少女的身影却再次出现在了他的面前。\r\n朝努力隐藏自己的脸，但根本藏不住……\r\n自称是朝的好友伊集院好雄，向朝询问与5人之间的关系。\r\n随着与5人相处，解开了彼此之间的误会，关系也稍微融洽了一些。\r\n放学后，朝打开鞋柜准备回家，却发现里面放着一封情书。\r\n寄件人不明的情书上，写着“在校舍后面的樱花树下等你”。这也如占卜所说的一样。\r\n事到如今，打算把一切都弄清楚的朝，向樱花树下走去。\r\n樱花飞舞的季节，5阵恋风带来的淡淡苦闷的青春爱情故事，现在，拉开帷幕!');
+INSERT INTO `anime` VALUES (9, '恋爱FLOPS', 'Passione', '2022-10-12', 10, '连载中', '日语', 22, 'true', '平凡的男子高中生柏树朝，像往常一样走在一成不变的通学路上。\r\n然而，正和出门前无意间打开的电视里播放的奇妙占卜说的一样，他在这个早晨遭遇到了各种各样的灾难。\r\n在一个接一个发生的灾难中，朝和5名少女发生了可说是最糟糕的相遇。\r\n当他身心俱疲、好不容易到达学校时，作为转校生和新任教师的5名少女的身影却再次出现在了他的面前。\r\n朝努力隐藏自己的脸，但根本藏不住……\r\n自称是朝的好友伊集院好雄，向朝询问与5人之间的关系。\r\n随着与5人相处，解开了彼此之间的误会，关系也稍微融洽了一些。\r\n放学后，朝打开鞋柜准备回家，却发现里面放着一封情书。\r\n寄件人不明的情书上，写着“在校舍后面的樱花树下等你”。这也如占卜所说的一样。\r\n事到如今，打算把一切都弄清楚的朝，向樱花树下走去。\r\n樱花飞舞的季节，5阵恋风带来的淡淡苦闷的青春爱情故事，现在，拉开帷幕!');
 INSERT INTO `anime` VALUES (10, '摇曳百合', '动画工房', '2011-07-04', 12, '已完结', '日语', 12, 'false', '从今天起，有点天然呆的灯里（三上枝织 配音）正式成为一名初中生，开学第一天灯里加入了好友京子（大坪由佳 配音）和结衣（津田美波 配音）所在的“娱乐部”。所谓娱乐部，其实她们只是占领了已经废部的茶道社办公室，社团活动也只不过是各种优哉游哉的喝茶闲聊。灯里的同班同学千夏（大久保瑠美 配音）因为憧憬着隶属茶道社的姐姐，阴错阳差地加入了她们。\r\n　　四名少女在娱乐部度着轻松欢乐、又带点百合情节的日子，京子极其喜欢外形可爱的千夏，千夏则喜欢着很会照顾人的结衣。这样一来，身为主人公的灯里无形中受到了冷落，大家在娱乐部展开了讨论会，结果会引发什么样的爆笑故事？同时，擅自占用教室一事，引来了学生会的关注，娱乐部会面临废部危机吗？');
 INSERT INTO `anime` VALUES (11, '摇曳百合2', '动画工房', '2012-07-02', 12, '已完结', '日语', 7, 'false', '故事发生在氛围轻松制度宽松的七森中学，为了打发无聊的课后时光，个性天真单纯的少女赤座灯里（三上枝织 配音）伙同童年好友岁纳京子（大坪由佳 配音）与船见结衣（津田美波 配音），利用荒废已久的茶道社组成了一个名为“娱乐部”的活动社团。之后，又有表面善良内心却极为腹黑的女孩吉川千夏（大久保瑠美 配音）在误打误撞之中加入，就这样，这个山寨社团的四人小组成立了。\n　　在这个没有正式申请的社团中，每天都发生着欢乐又爆笑的日常，可是没过多久，娱乐部的存在便被学生会发现了。作为副部长，杉浦绫乃（藤田咲 配音）怎能对此坐视不管？在娱乐部和学生会之间，一场轰轰烈烈的猫鼠大战开始了。');
 INSERT INTO `anime` VALUES (12, '摇曳百合3', 'TYO Animations', '2015-08-05', 12, '已完结', '日语', 19, 'false', '故事发生在七森中学中，茶道社因为人气不佳最终面临闭社的悲惨命运，单纯天真懵懂无知的赤座灯里（三上枝织 配音）、开朗热情的暴走少女岁纳京子（大坪由佳 配音）、沉默寡言但却是吐槽担当的船见结衣（津田美波 配音）和看似可爱人畜无害实则十分腹黑的吉川千夏（大久保瑠美 配音）四名女生占据了茶道社的活动教室，在这里另起炉灶成立了娱乐部。故事的序幕就此拉开。\n　　娱乐部的存在竟然引起了学生会的注意，身世神秘的会长松本理世（后藤沙绪里 配音）和傲娇不坦率的副会长杉浦绫乃（藤田咲 配音）的介入让本来就热闹的社团生活增添了一份欢乐。');
 INSERT INTO `anime` VALUES (13, '五等分的新娘 剧场版', 'Bibury Animation Studios', '2022-05-20', 1, '已完结', '日语', 0, 'true', '「濒临留级」、「讨厌念书」的五胞胎美少女，\n和身为兼差的家教老师，将他们引导到「毕业」的风太郎。\n迄今为止的努力都得到了回报，升上高三的五胞胎完成了毕业旅行，\n每个人都朝着「毕业」后的未来前行。\n与风太郎共度的时光中，五胞胎先后察觉到了自己对风太郎的爱意。\n风太郎与五胞胎的爱情会如何!? 未来的新娘是……\n可爱度500%的五胞胎恋爱喜剧，迎来完结──!! ');
-INSERT INTO `anime` VALUES (14, '孤独摇滚！', '芳文社', '2022-10-08', 9, '连载中', '日语', 16, 'true', '作为网络吉他手“Guitar Hero”而广受好评的后藤独，在现实中却是个什么都不会的沟通障碍者。独有着组建乐队的梦想，但因为不敢向人主动搭话而一直没有成功，直到一天在公园中被伊地知虹夏发现并邀请进入缺少吉他手的“结束乐队”。可是，完全没有和他人合作经历的独，在人前完全发挥不出原本的实力。为了努力克服沟通障碍，独与“结束乐队”的成员们一同开始努力…… ');
+INSERT INTO `anime` VALUES (14, '孤独摇滚！', '芳文社', '2022-10-08', 11, '连载中', '日语', 16, 'true', '作为网络吉他手“Guitar Hero”而广受好评的后藤独，在现实中却是个什么都不会的沟通障碍者。独有着组建乐队的梦想，但因为不敢向人主动搭话而一直没有成功，直到一天在公园中被伊地知虹夏发现并邀请进入缺少吉他手的“结束乐队”。可是，完全没有和他人合作经历的独，在人前完全发挥不出原本的实力。为了努力克服沟通障碍，独与“结束乐队”的成员们一同开始努力…… ');
 INSERT INTO `anime` VALUES (15, '调教咖啡厅', 'A-1 Pictures', '2017-10-07', 12, '已完结', '日语', 0, 'false', '来到了有着傲娇、妹系等各种“属性”的咖啡厅，新人店员莓香竟然被店长要求\"抖S\"属性！？努力工作的同时，意外的也让\"抖S\"才能渐渐开花……充满欢乐的打工由此展开！');
 INSERT INTO `anime` VALUES (16, '魔王学院的不适合者', 'SILVER LINK.', '2020-07-04', 13, '已完结', '日语', 0, 'false', '历经两千年的时光，苏醒了的暴虐魔王——\n但他在培育魔王候补的学院中的适性却是——“不适任”？！\n尽管具备能毁灭人类、精灵，甚至是众神的力量，暴虐魔王“阿诺斯·伏尔迪哥德”却厌倦了永无止尽的斗争，梦想着和平的世界进行转生。然而在两千年后，转生后的他所迎来的，却是调节和平生活而变得过于弱小的子孙们，以及各种衰退至极的魔法。\n阿诺斯虽然进入了对被视作魔王转世之人进行集中教育的“魔王学院”，但学院却无法看出他的实力，使得他被刻上不适任者这一烙印。不仅如此，传说中的魔王还变成了和自己完全不同的其他人。\n在众人都瞧不起他的环境里，他将唯一亲切对待自己的少女米夏纳为部下，作为不适任者（魔王），在魔族的等级制度上迈向巅峰。\n“不论天理、命运还是奇迹，在我的眼前只有俯首受戮一途而已。”');
 INSERT INTO `anime` VALUES (17, '冰菓', '京都动画', '2012-04-22', 22, '已完结', '日语', 0, 'false', '在众多将要展开「玫瑰色」生活的高中生之中，本作的男主角折木奉太郎却是一个「灰色」的节能主义者。凡是没必要的事就不做，因为不想后悔，被人说是疏离、厌世也无所谓，因为这就是他的作风。这样的折木奉太郎，却因为姐姐的命令而进入了濒临废社的「古籍研究社」。研究社虽然好不容易招到了四名新社员，但却又卷入了四十五年前社长突然肄业的谜团之中。社长当年留下的名为「冰菓」的社刊，内里究竟隐藏了什么神秘的讯息呢……');
 INSERT INTO `anime` VALUES (18, '雏子的笔记', 'Passione', '2017-04-07', 12, '已完结', '日语', 0, 'false', '樱木雏子是个不擅长和人交流的女孩子。为了改变一见人就像稻草人一样僵住的自己，以升入有着自己憧憬的演剧部的高中为契机而离开乡下的雏子，来到了住宿地点四季庄。那里住着喜爱书与食物的玖井菜、虽然年长却小巧玲珑又擅长料理的真雪、沉默而又身材拔群的房东千秋等住客……！？虽然有点奇怪却充满魅力的四季庄住民，与前稻草人少女所展开的可爱又快乐的演剧喜剧现在开幕！');
 INSERT INTO `anime` VALUES (19, '宇崎学妹想要玩!', 'ENGI', '2022-07-10', 12, '已完结', '日语', 13, 'false', '性格有些孤僻喜爱安静的大学３年级生，樱井真一。总是被小一届，同高中毕业的学妹宇崎花，以各种照顾爱耍孤僻的学长的名义为由，进行各种无厘头的纠缠。虽然一开始觉得有点困扰，但却逐渐习惯起来…');
-INSERT INTO `anime` VALUES (20, '宇崎酱想要玩耍 第二季', 'ENGI', '2022-10-01', 10, '连载中', '日语', 0, 'true', '#宇崎学妹想要玩#第二季制作决定！');
+INSERT INTO `anime` VALUES (20, '宇崎酱想要玩耍 第二季', 'ENGI', '2022-10-01', 12, '连载中', '日语', 0, 'true', '#宇崎学妹想要玩#第二季制作决定！');
 
 -- ----------------------------
 -- Table structure for animecv
@@ -279,6 +279,9 @@ INSERT INTO `comment` VALUES (9, '2022-12-04 23:25:10', '心脏:无所谓 我会
 INSERT INTO `comment` VALUES (10, '2022-12-04 23:25:35', 'da是真的垃 系统日常宕机 一线作战人员也没点警觉 看到无人机在动都没点反应 我的评价是还不如叙利亚民兵', 4, 2);
 INSERT INTO `comment` VALUES (11, '2022-12-15 10:57:20', '别问，都是我老婆', 5, 5);
 INSERT INTO `comment` VALUES (12, '2022-12-15 11:04:02', '啊', 5, 1);
+INSERT INTO `comment` VALUES (13, '2022-12-20 07:21:17', '好( •̀ ω •́ )y', 6, 3);
+INSERT INTO `comment` VALUES (14, '2022-12-20 09:49:41', '不愧是我老婆', 6, 2);
+INSERT INTO `comment` VALUES (15, '2022-12-21 01:59:44', '啊卡哇伊~~~', 6, 7);
 
 -- ----------------------------
 -- Table structure for cv2anime
@@ -291,7 +294,7 @@ CREATE TABLE `cv2anime`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `CVID`(`CVID` ASC) USING BTREE,
   CONSTRAINT `cv2anime_ibfk_1` FOREIGN KEY (`CVID`) REFERENCES `animecv` (`CVID`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 157 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 228 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of cv2anime
@@ -299,23 +302,6 @@ CREATE TABLE `cv2anime`  (
 INSERT INTO `cv2anime` VALUES (5, 2, 5);
 INSERT INTO `cv2anime` VALUES (6, 2, 6);
 INSERT INTO `cv2anime` VALUES (7, 2, 7);
-INSERT INTO `cv2anime` VALUES (13, 4, 32);
-INSERT INTO `cv2anime` VALUES (14, 4, 33);
-INSERT INTO `cv2anime` VALUES (15, 4, 34);
-INSERT INTO `cv2anime` VALUES (16, 4, 35);
-INSERT INTO `cv2anime` VALUES (17, 4, 36);
-INSERT INTO `cv2anime` VALUES (18, 4, 10);
-INSERT INTO `cv2anime` VALUES (19, 5, 8);
-INSERT INTO `cv2anime` VALUES (20, 5, 28);
-INSERT INTO `cv2anime` VALUES (21, 5, 29);
-INSERT INTO `cv2anime` VALUES (22, 5, 30);
-INSERT INTO `cv2anime` VALUES (23, 5, 31);
-INSERT INTO `cv2anime` VALUES (24, 9, 14);
-INSERT INTO `cv2anime` VALUES (25, 9, 36);
-INSERT INTO `cv2anime` VALUES (26, 9, 49);
-INSERT INTO `cv2anime` VALUES (27, 9, 43);
-INSERT INTO `cv2anime` VALUES (28, 9, 35);
-INSERT INTO `cv2anime` VALUES (29, 9, 48);
 INSERT INTO `cv2anime` VALUES (30, 6, 10);
 INSERT INTO `cv2anime` VALUES (31, 6, 17);
 INSERT INTO `cv2anime` VALUES (32, 6, 18);
@@ -366,10 +352,6 @@ INSERT INTO `cv2anime` VALUES (112, 13, 13);
 INSERT INTO `cv2anime` VALUES (113, 13, 14);
 INSERT INTO `cv2anime` VALUES (114, 13, 15);
 INSERT INTO `cv2anime` VALUES (115, 13, 16);
-INSERT INTO `cv2anime` VALUES (116, 14, 52);
-INSERT INTO `cv2anime` VALUES (117, 14, 53);
-INSERT INTO `cv2anime` VALUES (118, 14, 54);
-INSERT INTO `cv2anime` VALUES (119, 14, 55);
 INSERT INTO `cv2anime` VALUES (120, 15, 23);
 INSERT INTO `cv2anime` VALUES (121, 15, 56);
 INSERT INTO `cv2anime` VALUES (122, 15, 57);
@@ -401,12 +383,33 @@ INSERT INTO `cv2anime` VALUES (147, 19, 13);
 INSERT INTO `cv2anime` VALUES (148, 19, 78);
 INSERT INTO `cv2anime` VALUES (149, 19, 79);
 INSERT INTO `cv2anime` VALUES (150, 19, 70);
-INSERT INTO `cv2anime` VALUES (151, 20, 76);
-INSERT INTO `cv2anime` VALUES (152, 20, 77);
-INSERT INTO `cv2anime` VALUES (153, 20, 13);
-INSERT INTO `cv2anime` VALUES (154, 20, 78);
-INSERT INTO `cv2anime` VALUES (155, 20, 79);
-INSERT INTO `cv2anime` VALUES (156, 20, 70);
+INSERT INTO `cv2anime` VALUES (169, 4, 32);
+INSERT INTO `cv2anime` VALUES (170, 4, 33);
+INSERT INTO `cv2anime` VALUES (171, 4, 34);
+INSERT INTO `cv2anime` VALUES (172, 4, 35);
+INSERT INTO `cv2anime` VALUES (173, 4, 36);
+INSERT INTO `cv2anime` VALUES (174, 4, 10);
+INSERT INTO `cv2anime` VALUES (185, 5, 8);
+INSERT INTO `cv2anime` VALUES (186, 5, 28);
+INSERT INTO `cv2anime` VALUES (187, 5, 29);
+INSERT INTO `cv2anime` VALUES (188, 5, 30);
+INSERT INTO `cv2anime` VALUES (189, 5, 31);
+INSERT INTO `cv2anime` VALUES (196, 9, 14);
+INSERT INTO `cv2anime` VALUES (197, 9, 36);
+INSERT INTO `cv2anime` VALUES (198, 9, 49);
+INSERT INTO `cv2anime` VALUES (199, 9, 43);
+INSERT INTO `cv2anime` VALUES (200, 9, 35);
+INSERT INTO `cv2anime` VALUES (201, 9, 48);
+INSERT INTO `cv2anime` VALUES (206, 14, 52);
+INSERT INTO `cv2anime` VALUES (207, 14, 53);
+INSERT INTO `cv2anime` VALUES (208, 14, 54);
+INSERT INTO `cv2anime` VALUES (209, 14, 55);
+INSERT INTO `cv2anime` VALUES (222, 20, 76);
+INSERT INTO `cv2anime` VALUES (223, 20, 77);
+INSERT INTO `cv2anime` VALUES (224, 20, 13);
+INSERT INTO `cv2anime` VALUES (225, 20, 78);
+INSERT INTO `cv2anime` VALUES (226, 20, 79);
+INSERT INTO `cv2anime` VALUES (227, 20, 70);
 
 -- ----------------------------
 -- Table structure for image
@@ -466,6 +469,11 @@ INSERT INTO `news` VALUES (7, '轻小说《我推是反派大小姐》TV动画�
 INSERT INTO `news` VALUES (8, '2023年1月新番《不相信人类的冒险者们好像要去拯救世界》角色PV缇娅娜篇公开', '动画', '纳西妲', '2022-12-14 09:56:19', 863, '<p>TV动画《不相信人类的冒险者们好像要去拯救世界》角色PV第二弹缇娅娜篇及视觉图公开，将于2023年1月10开播</p>\n<p><iframe class=\"wpjam_video\" src=\"https://player.bilibili.com/player.html?bvid=BV1WP4y1D7B7\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\" data-origwidth=\"600\" data-origheight=\"380\" style=\"width: 466px; height: 373.667px;\" width=\"466\" height=\"380\" frameborder=\"no\"></iframe></p>\n<p>缇娅娜 CV：渡部纱弓</p>\n<p>被解除婚约并遭到驱逐的原贵族千金。<br>\n沦为平民后迷上了赌博。<br>\n使用魔杖释放魔法，不擅长土和火属性。</p>\n<p>【STAFF】<br>\n原作：富士伸太（『人间不信の冒険者たちが世界を救うようです』MFブックス/KADOKAWA刊）<br>\n角色原案：黒井ススム<br>\n原作企画：フロンティアワークス<br>\n导演・系列构成：伊魔崎斋<br>\n角色设计・总作画监督：长尾浩生<br>\n道具设计：野沢弘树<br>\n色彩设计：近藤直登<br>\n美术监督：SeoJungho<br>\n美术设定：中原英统<br>\n助导演・撮影监督・编集：堀川和人<br>\n音乐：高桥 谅<br>\n音响监督：纳谷僚介<br>\n音乐制作：波丽佳音<br>\n音乐制作协力：Apdream<br>\n动画制作：GEEKTOYS<br>\n动画制作协力：Seven</p>\n<p>【CAST】<br>\nニック：小林裕介<br>\nティアーナ：渡部纱弓<br>\nカラン：菊池纱矢香<br>\nゼム：土岐隼一<br>\nキズナ：小松未可子<br>\nアゲート：石原夏织</p>');
 INSERT INTO `news` VALUES (9, 'TV动画《SSSS.古立特》与《SSSS.电光机王》剧场总集篇PV 与主视觉图公开', '动画', '纳西妲', '2022-12-14 09:59:16', 829, '<p>TV动画《SSSS.古立特》与《SSSS.电光机王》剧场总集篇宣布将分别于2023年1月20日、3月10日在日本剧场限定两周上映，并同时公开了PV 与主视觉图</p>\n<p><iframe class=\"wpjam_video\" src=\"https://player.bilibili.com/player.html?bvid=BV1GK411r7uU\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\" data-origwidth=\"600\" data-origheight=\"380\" style=\"width: 466px; height: 373.667px;\" width=\"466\" height=\"380\" frameborder=\"no\"></iframe></p>\n<p><img width=\"466\" decoding=\"async\" title=\"TV动画《SSSS.古立特》与《SSSS.电光机王》剧场总集篇PV 与主视觉图公开\" src=\"http://tvax4.sinaimg.cn/large/006yt1Omgy1h92h1gnqpqj30xc1b4qkt.jpg\" alt=\"TV动画《SSSS.古立特》与《SSSS.电光机王》剧场总集篇PV 与主视觉图公开\"></p>\n<p><iframe class=\"wpjam_video\" src=\"https://player.bilibili.com/player.html?bvid=BV19V4y1w7Jq\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\" data-origwidth=\"600\" data-origheight=\"380\" style=\"width: 466px; height: 373.667px;\" width=\"466\" height=\"380\" frameborder=\"no\"></iframe></p>');
 INSERT INTO `news` VALUES (10, '《无职转生II》确定2023年内播出，内山夕实通过再次试音，续演少年期鲁迪乌斯', '声优', '纳西妲', '2022-12-14 10:07:42', 843, '<p>电视动画《无职转生 II ～到了异世界就拿出真本事～》公开前导海报。本作描述 34 岁家裡蹲男性转生到剑与魔法的异世界，成为一名叫作鲁迪乌斯的少年，开始了新的人生。第二期前导海报中可以看到长大了的鲁迪乌斯，以及后方穿著斗篷的白发角色。<br>\n<img decoding=\"async\" class=\"size-full wp-image-6230 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239281.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239281.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239281.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\"><br>\n延续第一期，鲁迪乌斯由内山夕实声演，不过在决定人选之前，制作组其实展开了相当长时间的讨论，最后请内山夕实重新试音之后，再度录取她。内山表示：「这次我依旧担任二期动画中鲁迪乌斯的配音。鲁迪乌斯在作品中的成长是相当重要的要素，制作组慎重地重新试音之后才选择了我，也让我再次绷紧了神经，想要带著这样的心情来面对这次的配音。」</p>\n<p>(c)理不尽な孙の手/MFブックス/「无职転生 Ⅱ」製作委员会</p>');
+INSERT INTO `news` VALUES (11, '2023年1月新番《间谍教室》正式PV 与主视觉图公开', '动画', '纳西妲', '2022-12-15 21:11:55', 885, '<p>TV动画《间谍教室》正式PV 与主视觉图公开，将于2023年1月5日开播。</p>\n<p><iframe class=\"wpjam_video\" src=\"https://player.bilibili.com/player.html?bvid=BV1wR4y1k77e\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\" data-origwidth=\"600\" data-origheight=\"380\" style=\"width: 460px; height: 365.433px;\" width=\"460\" height=\"380\" frameborder=\"no\"></iframe></p>\n<p>片头曲：nonoc《灯火》</p>\n<p><img decoding=\"async\" title=\"2023年1月新番《间谍教室》正式PV 与主视觉图公开\" width=\"460\" src=\"http://tva3.sinaimg.cn/large/006yt1Omgy1h93mkn48ahj30nj0xcdl7.jpg\" alt=\"2023年1月新番《间谍教室》正式PV 与主视觉图公开\"></p>\n<p>【STAFF】<br>\n原作：竹町（株式会社KADOKAWA Fantasia文库刊）<br>\n原作插画：トマリ<br>\n导演：川口敬一郎<br>\n助导演：池端隆史<br>\n系列构成：猪爪慎一<br>\n角色设计：木野下澄江<br>\n副角色设计：枡田邦彰、市松模样<br>\n道具设计：岩畑刚一、铃木典孝<br>\n枪械设定：常木志伸<br>\n服装设计：本间理莉<br>\n主要原画师：枡田邦彰、佐藤元昭、清水庆太、穂积彩夏<br>\n3D监督：小川耕平<br>\n3DLO/3DCG：Marco、デジタルモーション<br>\n美术背景：プロダクションアイ<br>\n美术监督：海野よしみ<br>\n美术板：槻舘育子<br>\n美术设定：长泽顺子<br>\n色彩设计：岩井田洋<br>\n摄影监督：难波史<br>\n编集：丸山流美<br>\n音响监督：纳谷僚介<br>\n音响制作：スタジオマウス<br>\n音乐：藤泽庆昌<br>\n音乐制作：KADOKAWA<br>\n动画制作：feel.</p>\n<p>【CAST】<br>\n莉莉：雨宫天<br>\n格蕾缇：伊藤美来<br>\n吉维娅：东山奈央<br>\n莫妮卡：悠木碧<br>\n缇娅：上坂堇<br>\n莎拉：佐仓绫音<br>\n阿涅特：楠木灯<br>\n克劳斯：梅原裕一郎</p>');
+INSERT INTO `news` VALUES (12, '2023年1月新番《阿鲁斯的巨兽》第一弹PV公开', '动画', '纳西妲', '2022-12-15 21:13:23', 840, '\n\n				\n		<p>TV动画《阿鲁斯的巨兽》第一弹PV公开，将于2023年1月7日开播，</p>\n<p><iframe class=\"wpjam_video\" src=\"https://player.bilibili.com/player.html?bvid=BV1DP4y1D76w\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\" data-origwidth=\"600\" data-origheight=\"380\" style=\"width: 460px; height: 365.433px;\" width=\"460\" height=\"380\" frameborder=\"no\"></iframe></p>\n<p>片头曲： PENGUIN RESEARCH『変幻自在』<br>\n片尾曲： 遥海『名もない花』</p>\n<p><img decoding=\"async\" title=\"2023年1月新番《阿鲁斯的巨兽》第一弹PV公开\" src=\"http://tvax3.sinaimg.cn/large/006yt1Omgy1h93nbqqy9qj31hc0u0wi6.jpg\" width=\"460\" alt=\"2023年1月新番《阿鲁斯的巨兽》第一弹PV公开\"></p>\n<p>【STAFF】<br>\n导演：オグロアキラ<br>\n角色原案：大枪苇人<br>\n系列构成・剧本：海法纪光<br>\n角色设计：清水洋、加藤真人<br>\n音乐：片山修志、铃木暁也<br>\n色彩设计：田中美穂<br>\n美术监督・美术设定：外谷恵美<br>\n撮影监修：山田和弘<br>\n撮影监督：长谷川奈穂<br>\n编集：本田优规<br>\n音响监督：田中亮<br>\n音响制作：ビットグルーヴプロモーション<br>\n动画制作：旭 Production</p>\n<p>【CAST】<br>\nクウミ：羊宫妃那<br>\nジイロ：森川智之<br>\nミャア：芹泽优<br>\nメラン：峯田大梦<br>\nロマーナ：日笠阳子<br>\nツルギ：濑户麻沙美<br>\nシャルト：仓持若菜<br>\nファザード：竹内良太<br>\nトオカ：青耶木真有<br>\nゼン：绪方贤一<br>\nメザミ：田丸笃志<br>\nバクラ：菅生隆之</p>\n\n	');
+INSERT INTO `news` VALUES (13, '2023年1月新番《在地下城寻求邂逅是否搞错了什么》第四季「灾厄篇」正式PV公开', '动画', '纳西妲', '2022-12-15 21:15:24', 881, '\n\n				\n		<p>TV动画《在地下城寻求邂逅是否搞错了什么&nbsp;第四季 深章 灾厄篇》正式预告公开，将于2023年1月5日开播。</p>\n<p><iframe class=\"wpjam_video\" src=\"https://player.bilibili.com/player.html?bvid=BV1J14y1T7eD\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\" data-origwidth=\"600\" data-origheight=\"380\" style=\"width: 460px; height: 365.433px;\" width=\"460\" height=\"380\" frameborder=\"no\"></iframe></p>\n<p>片头曲：早见沙织「視紅」<br>\n片尾曲：sajou no hana「切り傷」</p>\n<p><img decoding=\"async\" title=\"2023年1月新番《在地下城寻求邂逅是否搞错了什么》第四季「灾厄篇」正式PV公开\" width=\"460\" src=\"http://tvax2.sinaimg.cn/large/006yt1Omgy1h93n3jwd2rj31hc0u0aem.jpg\" alt=\"2023年1月新番《在地下城寻求邂逅是否搞错了什么》第四季「灾厄篇」正式PV公开\"></p>\n<p>【STAFF】<br>\n原作：大森藤ノ（GA文库／SBクリエイティブ刊）<br>\n角色原案：ヤスダスズヒト<br>\n导演：橘秀树<br>\n系列构成：大森藤ノ、白根秀树<br>\n角色设计：木本茂树<br>\n美术监督：金廷连（ムーンフラワー）<br>\n色彩设计：安藤智美<br>\n摄影监督：福世晋吾<br>\n剪辑：坪根健太郎（REAL-T）<br>\n音响监督：明田川 仁<br>\n音乐：井内啓二<br>\n制作：EGG FIRM／SBクリエイティブ<br>\n动画制作：J.C.STAFF</p>\n<p>【CAST】<br>\nベル・クラネル：松岡禎丞<br>\nヘスティア：水瀬いのり<br>\nリリルカ・アーデ：内田真礼<br>\nヴェルフ・クロッゾ：細谷佳正<br>\nヤマト・命：赤﨑千夏<br>\nサンジョウノ・春姫：千菅春香<br>\nカシマ・桜花：興津和幸<br>\nヒタチ・千草：井口裕香<br>\nダフネ・ラウロス：小若和郁那<br>\nカサンドラ・イリオン：真野あゆみ<br>\nアイシャ・ベルカ：渡辺明乃<br>\nリュー・リオン：早見沙織<br>\nアストレア：中原麻衣<br>\nアリーゼ・ローヴェル：花守ゆみり<br>\nゴジョウノ・輝夜：千本木彩花<br>\nライラ：諏訪彩花</p>\n\n	');
+INSERT INTO `news` VALUES (14, 'JOJO第9部《JOJOLANDS》23年2月连载', '漫画', '纳西妲', '2022-12-15 21:16:54', 964, '\n\n				\n		<p>荒木飞吕彦原作的《JOJO的奇妙冒险》第9部漫画《JOJOLANDS》，宣布将于2023年2月17日开始在《Ultra Jump》3月号上连载，​​​封面彩图公开。<br>\n<img decoding=\"async\" class=\"size-full wp-image-6331 aligncenter\" width=\"460\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/20221215001.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/20221215001.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/20221215001-209x300.jpg 209w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"861\"><br>\n之前荒木飞吕彦在最新杂志访谈中透露本作的主角是乔瑟夫·乔斯达的后裔。他在乔斯达家谱中的位置与前六部世界的乔瑟夫一样，是乔纳森的孙子、小乔治和伊丽莎白的儿子、丝吉Q的丈夫与荷莉的父亲。于《乔乔福音》最后两话登场，善于用自己的木屐攻击，初登场时踢出木屐准确地一击命中正在逃跑的偷包贼。</p>\n<p>除此之外，在月初荒木飞吕彦接受访问的时候更指自己想画一部以美洲为背景的《岸边露伴一动不动》。不知道荒木飞吕彦之后会不会画出呢？</p>\n\n	');
+INSERT INTO `news` VALUES (15, '舞台剧《Lycoris Recoil 莉可丽丝》公开13位演员定装照', '舞台剧', '纳西妲', '2022-12-15 21:31:05', 871, '\n\n				\n		<p>舞台剧《Lycoris Recoil 莉可丽丝》公开了演员定装照。<br>\n<img decoding=\"async\" class=\"size-full wp-image-6292 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239619.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239619.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239619.webp-213x300.jpg 213w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"937\"><br>\n将于 2023 年 1月7日～1月15日 期间在东京公演的本作，今天公开千束、泷奈等一共 13 位角色的定装照。<br>\n<img decoding=\"async\" class=\"size-full wp-image-6293 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239620.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239620.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239620.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"937\"></p>\n<p><img decoding=\"async\" class=\"size-full wp-image-6294 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239621.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239621.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239621.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"937\"></p>\n<p><img decoding=\"async\" class=\"size-full wp-image-6295 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239622.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239622.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239622.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"937\"></p>\n<p><img decoding=\"async\" class=\"size-full wp-image-6296 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239623.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239623.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239623.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"937\"></p>\n<p><img decoding=\"async\" class=\"size-full wp-image-6297 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239624.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239624.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239624.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"937\"></p>\n<p><img decoding=\"async\" class=\"size-full wp-image-6298 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239625.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239625.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239625.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"937\"></p>\n<p><img decoding=\"async\" class=\"size-full wp-image-6299 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239626.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239626.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239626.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"937\"></p>\n<p><img decoding=\"async\" class=\"size-full wp-image-6300 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239627.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239627.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239627.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"937\"></p>\n<p><img decoding=\"async\" class=\"size-full wp-image-6301 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239628.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239628.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239628.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"660\" height=\"937\"></p>\n<p><img decoding=\"async\" class=\"size-full wp-image-6302 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239629.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239629.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239629.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"937\"></p>\n<p><img decoding=\"async\" class=\"size-full wp-image-6303 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239630.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239630.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239630.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"937\"></p>\n<p><img decoding=\"async\" class=\"size-full wp-image-6304 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239631.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239631.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239631.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"937\"></p>\n<p><img decoding=\"async\" class=\"size-full wp-image-6305 aligncenter\" src=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239632.webp.jpg\" alt=\"\" srcset=\"https://www.hotacg.com/wp-content/uploads/2022/12/4239632.webp.jpg 460w, https://www.hotacg.com/wp-content/uploads/2022/12/4239632.webp-211x300.jpg 211w\" sizes=\"(max-width: 460px) 100vw, 460px\" width=\"460\" height=\"937\"><br>\n(c)Spider Lily/アニプレックス・ABCアニメーション・BS11 (c)舞台「リコリス・リコイ儿」製作委员会</p>\n<p>舞台剧官网：https://lycoris-recoil.com/stage/</p>\n\n	');
 
 -- ----------------------------
 -- Table structure for type2anime
@@ -479,14 +487,11 @@ CREATE TABLE `type2anime`  (
   INDEX `TypeID`(`TypeID` ASC) USING BTREE,
   INDEX `AnimeID`(`AnimeID` ASC) USING BTREE,
   CONSTRAINT `type2anime_ibfk_1` FOREIGN KEY (`TypeID`) REFERENCES `animetype` (`TypeID`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 96 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 119 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of type2anime
 -- ----------------------------
-INSERT INTO `type2anime` VALUES (10, 3, 4);
-INSERT INTO `type2anime` VALUES (11, 9, 5);
-INSERT INTO `type2anime` VALUES (12, 11, 5);
 INSERT INTO `type2anime` VALUES (13, 5, 6);
 INSERT INTO `type2anime` VALUES (14, 7, 7);
 INSERT INTO `type2anime` VALUES (15, 9, 7);
@@ -494,7 +499,6 @@ INSERT INTO `type2anime` VALUES (16, 11, 7);
 INSERT INTO `type2anime` VALUES (17, 1, 8);
 INSERT INTO `type2anime` VALUES (18, 3, 8);
 INSERT INTO `type2anime` VALUES (19, 6, 8);
-INSERT INTO `type2anime` VALUES (20, 7, 9);
 INSERT INTO `type2anime` VALUES (21, 8, 10);
 INSERT INTO `type2anime` VALUES (22, 11, 10);
 INSERT INTO `type2anime` VALUES (23, 12, 10);
@@ -516,9 +520,6 @@ INSERT INTO `type2anime` VALUES (79, 8, 12);
 INSERT INTO `type2anime` VALUES (80, 11, 12);
 INSERT INTO `type2anime` VALUES (81, 12, 12);
 INSERT INTO `type2anime` VALUES (82, 11, 13);
-INSERT INTO `type2anime` VALUES (83, 11, 14);
-INSERT INTO `type2anime` VALUES (84, 7, 14);
-INSERT INTO `type2anime` VALUES (85, 10, 14);
 INSERT INTO `type2anime` VALUES (86, 7, 15);
 INSERT INTO `type2anime` VALUES (87, 8, 15);
 INSERT INTO `type2anime` VALUES (88, 3, 16);
@@ -527,8 +528,15 @@ INSERT INTO `type2anime` VALUES (90, 11, 17);
 INSERT INTO `type2anime` VALUES (91, 8, 18);
 INSERT INTO `type2anime` VALUES (92, 7, 18);
 INSERT INTO `type2anime` VALUES (93, 11, 19);
-INSERT INTO `type2anime` VALUES (94, 8, 20);
-INSERT INTO `type2anime` VALUES (95, 10, 20);
+INSERT INTO `type2anime` VALUES (98, 3, 4);
+INSERT INTO `type2anime` VALUES (103, 9, 5);
+INSERT INTO `type2anime` VALUES (104, 11, 5);
+INSERT INTO `type2anime` VALUES (106, 7, 9);
+INSERT INTO `type2anime` VALUES (110, 11, 14);
+INSERT INTO `type2anime` VALUES (111, 7, 14);
+INSERT INTO `type2anime` VALUES (112, 10, 14);
+INSERT INTO `type2anime` VALUES (117, 8, 20);
+INSERT INTO `type2anime` VALUES (118, 10, 20);
 
 -- ----------------------------
 -- Table structure for user
@@ -552,9 +560,10 @@ CREATE TABLE `user`  (
 -- ----------------------------
 INSERT INTO `user` VALUES (1, '马化腾', 'mahuateng', 'mahuateng@qq.com', '123456', '2022-11-29', '我是马化腾', '男');
 INSERT INTO `user` VALUES (2, '马云', 'mayun', 'mayun@aliyun.com', '123456', '2022-11-29', '我是马云', '男');
-INSERT INTO `user` VALUES (3, '胡桃', 'hutao', 'hutao@mihoyo.com', '1', '2022-11-29', '胡堂主是我', '女');
+INSERT INTO `user` VALUES (3, '胡桃1', 'hutao', 'hutao@mihoyo.com', '1', '2022-11-29', '胡堂主是我', '女');
 INSERT INTO `user` VALUES (4, '莱依拉', '\r\nlayla', 'layla@mihoyo.com', '123456', '2022-11-29', '你好', '女');
 INSERT INTO `user` VALUES (5, 'm', 'm', NULL, 'm', '2022-12-14', NULL, '男');
+INSERT INTO `user` VALUES (6, 'ACong', 'ACong', NULL, 'baizhiyousa99', '2022-12-20', NULL, '男');
 
 -- ----------------------------
 -- Table structure for yiyan
@@ -568,7 +577,7 @@ CREATE TABLE `yiyan`  (
   PRIMARY KEY (`YiYanID`) USING BTREE,
   INDEX `AdminID`(`AdminID` ASC) USING BTREE,
   CONSTRAINT `yiyan_ibfk_1` FOREIGN KEY (`AdminID`) REFERENCES `admin` (`AdminID`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 16 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of yiyan
@@ -583,7 +592,11 @@ INSERT INTO `yiyan` VALUES (7, 1, '生命如同寓言，其价值不在于长短
 INSERT INTO `yiyan` VALUES (8, 1, '我和空太是恋人以上，友人未满的关系。', '樱花庄的宠物女孩');
 INSERT INTO `yiyan` VALUES (9, 1, '如果我们能活着出去的话，千山万水，你愿意陪我一起看吗？', '狐妖小红娘');
 INSERT INTO `yiyan` VALUES (10, 1, '一味地追求理想，总有一天会被现实背叛。', '名侦探柯南：绯色的子弹');
-INSERT INTO `yiyan` VALUES (11, 1, 'v', 'v');
+INSERT INTO `yiyan` VALUES (11, 1, '失去故土的花朵，回不去，却也离不开。', '长歌行');
+INSERT INTO `yiyan` VALUES (12, 1, '你说过，人最大的敌人是自己。', '我的前半生');
+INSERT INTO `yiyan` VALUES (13, 1, '大家互相帮助，一起成功，一起幸福什么的，不过是种理想。', '我的青春恋爱物语果然有问题');
+INSERT INTO `yiyan` VALUES (14, 1, '孤独的人不会伤害别人，只会不断地伤害自己罢了。', '我的青春恋爱物语果然有问题');
+INSERT INTO `yiyan` VALUES (15, 1, '我连宇宙尽头在哪里都不知道，怎么会知道这个。', 'JOJO的奇妙冒险');
 
 -- ----------------------------
 -- View structure for cvgroupanime
