@@ -845,16 +845,16 @@ DROP VIEW IF EXISTS `cvgroupanime`;
 CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `cvgroupanime` AS select `anime`.`AnimeID` AS `AnimeID`,`anime`.`AnimeName` AS `AnimeName`,group_concat(`animecv`.`CVName` separator ',') AS `CVName` from ((`anime` join `cv2anime`) join `animecv`) where ((`anime`.`AnimeID` = `cv2anime`.`AnimeID`) and (`animecv`.`CVID` = `cv2anime`.`CVID`)) group by `anime`.`AnimeID`,`anime`.`AnimeName`;
 
 -- ----------------------------
--- View structure for getallanime
--- ----------------------------
-DROP VIEW IF EXISTS `getallanime`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `getallanime` AS select `anime`.`AnimeID` AS `AnimeID`,`anime`.`AnimeName` AS `AnimeName`,`anime`.`AnimeHot` AS `AnimeHot`,`anime`.`AnimeDescription` AS `AnimeDescription`,`anime`.`AnimeLanguage` AS `AnimeLanguage`,`anime`.`AnimeStats` AS `AnimeStats`,`anime`.`AnimeCompany` AS `AnimeCompany`,`anime`.`AnimeEpisode` AS `AnimeEpisode`,`anime`.`AnimeReleaseDate` AS `AnimeReleaseDate`,`anime`.`AnimeRecommend` AS `AnimeRecommend`,`typegroupanime`.`AnimeType` AS `AnimeType`,`cvgroupanime`.`CVName` AS `CVName` from ((`anime` join `typegroupanime` on((`anime`.`AnimeID` = `typegroupanime`.`AnimeID`))) join `cvgroupanime` on((`anime`.`AnimeID` = `cvgroupanime`.`AnimeID`)));
-
--- ----------------------------
 -- View structure for typegroupanime
 -- ----------------------------
 DROP VIEW IF EXISTS `typegroupanime`;
 CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `typegroupanime` AS select `anime`.`AnimeID` AS `AnimeID`,`anime`.`AnimeName` AS `AnimeName`,group_concat(`animetype`.`Type` separator ',') AS `AnimeType` from ((`anime` join `type2anime` on((`anime`.`AnimeID` = `type2anime`.`AnimeID`))) join `animetype` on((`type2anime`.`TypeID` = `animetype`.`TypeID`))) where ((`anime`.`AnimeID` = `type2anime`.`AnimeID`) and (`type2anime`.`TypeID` = `animetype`.`TypeID`)) group by `anime`.`AnimeID`,`anime`.`AnimeName`;
+
+-- ----------------------------
+-- View structure for getallanime
+-- ----------------------------
+DROP VIEW IF EXISTS `getallanime`;
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `getallanime` AS select `anime`.`AnimeID` AS `AnimeID`,`anime`.`AnimeName` AS `AnimeName`,`anime`.`AnimeHot` AS `AnimeHot`,`anime`.`AnimeDescription` AS `AnimeDescription`,`anime`.`AnimeLanguage` AS `AnimeLanguage`,`anime`.`AnimeStats` AS `AnimeStats`,`anime`.`AnimeCompany` AS `AnimeCompany`,`anime`.`AnimeEpisode` AS `AnimeEpisode`,`anime`.`AnimeReleaseDate` AS `AnimeReleaseDate`,`anime`.`AnimeRecommend` AS `AnimeRecommend`,`typegroupanime`.`AnimeType` AS `AnimeType`,`cvgroupanime`.`CVName` AS `CVName` from ((`anime` join `typegroupanime` on((`anime`.`AnimeID` = `typegroupanime`.`AnimeID`))) join `cvgroupanime` on((`anime`.`AnimeID` = `cvgroupanime`.`AnimeID`)));
 
 -- ----------------------------
 -- View structure for uploaderviaid
